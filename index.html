@@ -7,12 +7,9 @@
     <script type="module" src="./src/js/main.js"></script>
   </head>
   <body class="position-relative z-n1">
-    <header class="header py-3 fixed-top bg-body-tertiary">
+    <header class="header py-3 fixed-top" id="header">
       <div class="container-xxl">
-        <nav
-          class="navbar navbar-expand-lg bg-body-tertiary"
-          id="navbar-example2"
-        >
+        <nav class="navbar navbar-expand-lg" id="navbar-example2">
           <div
             class="container-fluid d-flex flex-wrap justify-content-between align-items-center"
           >
@@ -97,7 +94,7 @@
           <div
             class="row flex-lg-row-reverse align-items-center justify-content-between gy-5"
           >
-            <div class="col-md-12 col-lg-6 col-xxl-3">
+            <div class="col-md-12 col-lg-6 col-xxl-3 hero-image-content">
               <img
                 src="/img/hero.jpg"
                 alt=""
@@ -107,17 +104,19 @@
                 loading="lazy"
               />
             </div>
-            <div class="col-lg-6 col-xxl-7 position-relative">
+            <div class="col-lg-6 col-xxl-7 position-relative hero-text-content">
               <span
                 class="position-absolute top-0 end-0 border-top border-2 border-black w-25"
                 style="max-width: 90px"
               >
               </span>
-              <h1 class="h5 w-75 mb-4 balanced-text">
+              <h1 class="h5 w-75 mb-4 balanced-text hero-text-content-title">
                 Профессиональный сертифицированный коуч по методике ICF
               </h1>
-              <p class="h1 w-75 mb-4 lh-sm">Анна Талуева</p>
-              <p class="w-100">
+              <p class="h1 w-75 mb-4 lh-sm hero-text-content-subtitle">
+                Анна Талуева
+              </p>
+              <p class="w-100 hero-text-content-description">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -125,21 +124,21 @@
               </p>
 
               <button
-                class="btn btn-primary btn-lg px-4 z-0 position-relative my-3"
+                class="btn btn-primary btn-lg px-4 z-0 position-relative my-3 hero-text-content-button"
                 data-bs-toggle="modal"
                 data-bs-target="#mainModal"
               >
                 Забронировать сессию
               </button>
 
-              <ul class="nav fs-3 text-primary">
-                <li class="mx-2">
+              <ul class="nav fs-3 text-primary hero-text-content-social">
+                <li class="mx-2 hero-text-content-social-link">
                   <a href="#"><i class="bi bi-skype"></i></a>
                 </li>
-                <li class="mx-2">
+                <li class="mx-2 hero-text-content-social-link">
                   <a href="#"><i class="bi bi-telegram"></i></a>
                 </li>
-                <li class="mx-2">
+                <li class="mx-2 hero-text-content-social-link">
                   <a href="#"><i class="bi bi-whatsapp"></i></a>
                 </li>
               </ul>
@@ -150,10 +149,10 @@
 
       <section class="section-reviews mb-5 py-5 bg-cc-bg" id="reviews">
         <div class="container-xxl py-5">
-          <h2 class="pb-2 h1 text-center fw-bold mb-5">
+          <h2 class="pb-2 h1 text-center fw-bold mb-5 reviews-title">
             Отзывы <span class="text-secondary">о коуч-сессиях</span>
           </h2>
-          <div class="glide">
+          <div class="glide reviews-body">
             <div class="glide__track w-100" data-glide-el="track">
               <ul
                 class="row row-cols-1 row-cols-lg-3 mx-0 g-4 justify-content-center align-items-stretch m-0 p-0 glide__slides"
@@ -367,11 +366,11 @@
         id="cost"
       >
         <div class="container-xxl py-5 h-100">
-          <h2 class="pb-2 h2 text-center fw-bold mb-5">
+          <h2 class="pb-2 h2 text-center fw-bold mb-5 prices-title">
             Цена <span class="text-secondary">коучинга</span>
           </h2>
 
-          <ul class="nav nav-pills" role="tablist">
+          <ul class="nav nav-pills prices-body" role="tablist">
             <li class="nav-item">
               <a
                 class="nav-link active text-cc-text-gray opacity-50"
@@ -393,7 +392,7 @@
             </li>
           </ul>
 
-          <div class="tab-content mt-5">
+          <div class="tab-content mt-5 prices-body">
             <div role="tabpanel" class="tab-pane active" id="price-1">
               <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-0 g-4">
                 <div class="ps-0 my-4">
@@ -545,12 +544,12 @@
 
       <section class="section-consultation py-5 bg-cc-bg" id="consultations">
         <div class="container-xxl py-5">
-          <h2 class="pb-2 h1 text-center fw-bold mb-5">
+          <h2 class="pb-2 h1 text-center fw-bold mb-5 consultation-title">
             Список <span class="text-secondary">публикаций</span>
           </h2>
 
           <div class="row g-4">
-            <div class="col-lg-4 col-sm-4 column col-12">
+            <div class="col-lg-4 col-sm-4 column col-12 consultation-col">
               <div
                 class="consultation-body d-flex flex-column align-items-start bg-cc-bg-reviews shadow px-3 py-5 rounded-5"
               >
@@ -569,7 +568,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-4 column col-12">
+            <div class="col-lg-4 col-sm-4 column col-12 consultation-col">
               <div
                 class="consultation-body d-flex flex-column align-items-start bg-cc-bg-reviews shadow px-3 py-5 rounded-5"
               >
@@ -588,7 +587,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-4 column col-12">
+            <div class="col-lg-4 col-sm-4 column col-12 consultation-col">
               <div
                 class="consultation-body d-flex flex-column align-items-start bg-cc-bg-reviews shadow px-3 py-5 rounded-5"
               >
@@ -608,7 +607,7 @@
               </div>
             </div>
             <div class="col-sm-1 column col-lg-2 col-1 m-0"></div>
-            <div class="col-sm-5 column col-lg-4 col-12">
+            <div class="col-sm-5 column col-lg-4 col-12 consultation-col">
               <div
                 class="consultation-body d-flex flex-column align-items-start bg-cc-bg-reviews shadow px-3 py-5 rounded-5"
               >
@@ -627,7 +626,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-sm-5 column col-lg-4 col-12">
+            <div class="col-sm-5 column col-lg-4 col-12 consultation-col">
               <div
                 class="consultation-body d-flex flex-column align-items-start bg-cc-bg-reviews shadow px-3 py-5 rounded-5"
               >
@@ -664,7 +663,7 @@
               alt=""
               width="400"
               height="600"
-              class="d-block img-fluid shadow-lg rounded mx-auto hero-img"
+              class="d-block img-fluid shadow-lg rounded mx-auto hero-img about-image-content"
               loading="lazy"
             />
           </div>
@@ -672,18 +671,18 @@
             class="d-flex flex-column align-items-start justify-content-end col-lg-6 col-xxl-7 position-relative"
           >
             <h2
-              class="h2 w-100 mb-4 balanced-text fw-bold border-top border-2 border-black w-100 pt-4"
+              class="h2 w-100 mb-4 balanced-text fw-bold border-top border-2 border-black w-100 pt-4 about-text-content-title"
             >
               It has roots in a piece of classical Latin literature from 45 BC,
               making it over 2000 years old.
             </h2>
-            <p class="w-100 mb-4">
+            <p class="w-100 mb-4 about-text-content-description">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
-            <p class="w-100">
+            <p class="w-100 about-text-content-description">
               It has survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged. It was
               popularised in the 1960s with the release of Letraset sheets
@@ -693,7 +692,7 @@
             </p>
 
             <button
-              class="btn btn-primary btn-lg px-4 z-0 position-relative"
+              class="btn btn-primary btn-lg px-4 z-0 position-relative about-text-content-button"
               data-bs-toggle="modal"
               data-bs-target="#mainModal"
             >
@@ -709,9 +708,9 @@
         <div class="container-xxl">
           <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md-6 my-5 my-md-0">
-              <div class="d-flex align-items-stretch my-3">
+              <div class="d-flex align-items-stretch my-3 timeline-title">
                 <h2
-                  class="h3 fs-6 py-2 px-4 border rounded-top-0 rounded-bottom-5 rounded-end-5 text-center m-0 fw-bold w-100 w-sm-auto"
+                  class="h3 fs-6 py-2 px-4 border rounded-top-0 rounded-bottom-5 rounded-end-5 text-center m-0 fw-bold w-100 w-sm-auto "
                 >
                   Кому нужен коуч?
                 </h2>
@@ -719,10 +718,10 @@
               <div
                 class="d-flex flex-column align-items-start justify-content-end position-relative"
               >
-                <h3 class="h2 w-100 mb-4 balanced-text fw-bold">
+                <h3 class="h2 w-100 mb-4 balanced-text fw-bold timeline-subtitle">
                   Lorem Ipsum is simply dummy text of the printing
                 </h3>
-                <p class="w-100">
+                <p class="w-100 timeline-description">
                   Contrary to popular belief, Lorem Ipsum is not simply random
                   text. It has roots in a piece of classical Latin literature
                   from 45 BC, making it over 2000 years old. Richard McClintock,
@@ -744,7 +743,7 @@
                       <div class="col">&nbsp;</div>
                     </div>
                     <span
-                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-normal lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
+                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-semibold lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
                     >
                       1
                     </span>
@@ -772,14 +771,14 @@
               <div class="timeline timeline-six px-sm-0">
                 <div class="row g-0">
                   <div
-                    class="col-sm-2 col-md-1 text-center flex-column d-sm-flex justify-content-between"
+                    class="col-sm-2 col-md-1 text-center flex-column d-sm-flex justify-content-between "
                   >
-                    <div class="d-flex h-30">
-                      <div class="col middle-line">&nbsp;</div>
+                    <div class="d-flex h-30 ">
+                      <div class="col middle-line ">&nbsp;</div>
                       <div class="col">&nbsp;</div>
                     </div>
                     <span
-                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-normal lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
+                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-semibold lh-1 text-cc-text  border border-secondary timeline-text-open"
                     >
                       2
                     </span>
@@ -813,7 +812,7 @@
                       <div class="col">&nbsp;</div>
                     </div>
                     <span
-                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-normal lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
+                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-semibold lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
                     >
                       3
                     </span>
@@ -847,7 +846,7 @@
                       <div class="col">&nbsp;</div>
                     </div>
                     <span
-                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-normal lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
+                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-semibold lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
                     >
                       4
                     </span>
@@ -878,103 +877,15 @@
 
       <section class="section-publications py-5 bg-cc-bg">
         <div class="container-xxl py-5">
-          <h2 class="pb-2 h1 text-center fw-bold mb-5">
+          <h2 class="pb-2 h1 text-center fw-bold mb-5 publications-title">
             Список <span class="text-secondary">публикаций</span>
           </h2>
 
-          <h3 class="pb-2 mb-5">Последние публикации</h3>
-          <!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-0 g-4">
-          
-
-            <div class="col p-0 p-sm-3">
-              <div class="card bg-cc-bg-reviews shadow rounded-5">
-                <img
-                  src="./img/links.jpg"
-                  class="card-img-top rounded-5"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title lh-1 m-0 text-uppercase">
-                    Заголовок карточки
-                  </h5>
-                </div>
-                <div
-                  class="card-footer d-flex align-items-center justify-content-between text-dark"
-                >
-                  <p class="card-text m-0 text-text-dark opacity-25">
-                    15/05/24
-                  </p>
-
-                  <a
-                    href="#"
-                    class="icon-link icon-link-hover text-decoration-none link-cc-blue fw-bold"
-                  >
-                    Voir détail
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-arrow-right ms-2"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col p-0 p-sm-3">
-              <div class="card bg-cc-bg-reviews shadow rounded-5">
-                <img
-                  src="./img/links.jpg"
-                  class="card-img-top rounded-5"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title lh-1 m-0 text-uppercase">
-                    Заголовок карточки
-                  </h5>
-                </div>
-                <div
-                  class="card-footer d-flex align-items-center justify-content-between text-dark"
-                >
-                  <p class="card-text m-0 text-text-dark opacity-25">
-                    15/05/24
-                  </p>
-
-                  <a
-                    href="#"
-                    class="icon-link icon-link-hover text-decoration-none link-cc-blue fw-bold"
-                  >
-                    Voir détail
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-arrow-right ms-2"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <div class="glide-publications position-relative">
-            <div class="glide__track w-100" data-glide-el="track">
+          <h3 class="pb-2 mb-5 publications-title">Последние публикации</h3>
+          <div class="glide-publications position-relative publications-body">
+            <div class="glide__track w-100 " data-glide-el="track">
               <ul
-                class="row row-cols-1 row-cols-lg-3 mx-0 g-4 justify-content-center align-items-stretch m-0 p-0 glide__slides"
+                class="row row-cols-1 row-cols-lg-3 mx-0 g-4 justify-content-center align-items-stretch m-0 p-0 glide__slides "
                 style="gap: 10px"
               >
                 <li
@@ -1149,12 +1060,20 @@
           </div>
         </div>
       </section>
+
+      <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg rounded-circle bg-secondary text-light"
+        id="btn-back-to-top"
+      >
+        <i class="bi bi-arrow-up"></i>
+      </button>
     </div>
 
     <footer class="bg-cc-bg-card pt-5">
       <div class="container-xxl">
         <div class="row row-cols-1 row-cols-md-4 pb-4">
-          <div class="col col-md-12 col-lg-5 mb-3">
+          <div class="col col-md-12 col-lg-5 mb-3 footer-col">
             <a href="/" class="d-flex align-items-center me-md-auto w-100 mb-3">
               <svg
                 width="121"
@@ -1179,7 +1098,7 @@
             </p>
           </div>
 
-          <div class="col col-sm-6 col-md-4 col-lg-3 mb-3">
+          <div class="col col-sm-6 col-md-4 col-lg-3 mb-3 footer-col">
             <h5 class="mb-3 h5 fw-semibold text-cc-text">Контакты</h5>
 
             <a
@@ -1222,7 +1141,7 @@
             </a>
           </div>
 
-          <div class="col col-sm-6 col-md-4 col-lg-2 mb-3">
+          <div class="col col-sm-6 col-md-4 col-lg-2 mb-3 footer-col">
             <h5 class="mb-3 h5 fw-semibold text-cc-text">Мы тут:</h5>
 
             <ul class="nav fs-5">
@@ -1244,7 +1163,7 @@
             </ul>
           </div>
 
-          <div class="col col-md-4 col-lg-2 mb-3">
+          <div class="col col-md-4 col-lg-2 mb-3 footer-col">
             <h5 class="mb-3 h5 fw-semibold text-cc-text">Навигация</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">

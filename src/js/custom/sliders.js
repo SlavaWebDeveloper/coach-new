@@ -25,7 +25,7 @@ var glide = new Glide(".glide", {
 glide.mount();
 
 
-var glide = new Glide(".glide-publications", {
+var glidePublications = new Glide(".glide-publications", {
   type: "carousel",
   focusAt: "center",
   perView: 3,
@@ -41,4 +41,4 @@ var glide = new Glide(".glide-publications", {
     }
   }
 });
-glide.mount();
+glidePublications.mount();

@@ -17,4 +17,8 @@ import 'bootstrap/js/dist/tab';
 import 'bootstrap/js/dist/toast';
 import 'bootstrap/js/dist/tooltip';
 
-import '@/js/custom/reviews-slider.js'
+import '@/js/custom/sliders.js';
+import '@/js/custom/arrow-up.js';
+import '@/js/custom/blurHeader.js';
+import '@/js/custom/scrollRevealAnimation.js';
+import '@/js/custom/scrollTimeline.js';
