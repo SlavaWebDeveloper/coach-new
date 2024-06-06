@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./src/js/main.js"></script>
+  </head>
+  <body class="position-relative z-n1">
+    <header class="header py-3 fixed-top bg-body-tertiary">
+      <div class="container-xxl">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary"
+          id="navbar-example2"
+        >
+          <div
+            class="container-fluid d-flex flex-wrap justify-content-between align-items-center"
+          >
+            <a class="navbar-brand" href="#">
+              <svg
+                width="121"
+                height="22"
+                viewBox="0 0 121 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.45 18L4.38 0.269999H6.81L10.68 18H8.64L7.68 13.89H3.33L2.43 18H0.45ZM3.39 12.84H7.65L5.55 2.58L3.39 12.84ZM12.3928 18V3.15H14.2528V9.48H18.9628V3.15H20.8228V18H18.9628V10.92H14.2528V18H12.3928ZM23.3498 18V3.15H25.2098V9.48H29.9198V3.15H31.7798V18H29.9198V10.92H25.2098V18H23.3498ZM37.3369 18.21C36.8769 18.21 36.4069 18.14 35.9269 18C35.4669 17.88 35.0669 17.59 34.7269 17.13C34.4069 16.65 34.2469 15.91 34.2469 14.91V13.47C34.2469 12.47 34.5469 11.67 35.1469 11.07C35.7669 10.45 36.6069 9.9 37.6669 9.42C38.3469 9.08 38.8969 8.78 39.3169 8.52C39.7569 8.26 40.0869 7.97 40.3069 7.65C40.5269 7.33 40.6369 6.9 40.6369 6.36V5.73C40.6369 5.25 40.5369 4.88 40.3369 4.62C40.1369 4.36 39.8669 4.18 39.5269 4.08C39.2069 3.98 38.8669 3.93 38.5069 3.93C37.6069 3.93 37.0169 4.18 36.7369 4.68C36.4569 5.16 36.3169 5.88 36.3169 6.84V8.1H34.6069V6.66C34.6069 5.92 34.7069 5.27 34.9069 4.71C35.1069 4.13 35.4869 3.68 36.0469 3.36C36.6069 3.02 37.4269 2.85 38.5069 2.85C39.6469 2.85 40.4969 2.98 41.0569 3.24C41.6369 3.5 42.0169 3.87 42.1969 4.35C42.3969 4.83 42.4969 5.4 42.4969 6.06V18H40.6669L40.6369 16.14C40.3969 16.82 39.9669 17.34 39.3469 17.7C38.7269 18.04 38.0569 18.21 37.3369 18.21ZM38.0269 16.95C38.9269 16.95 39.5769 16.63 39.9769 15.99C40.3969 15.35 40.6069 14.5 40.6069 13.44V8.7C40.4069 9.02 40.0769 9.31 39.6169 9.57C39.1569 9.83 38.6869 10.09 38.2069 10.35C37.5269 10.75 36.9969 11.17 36.6169 11.61C36.2569 12.03 36.0769 12.62 36.0769 13.38V14.55C36.0769 15.27 36.1769 15.8 36.3769 16.14C36.5769 16.48 36.8269 16.7 37.1269 16.8C37.4269 16.9 37.7269 16.95 38.0269 16.95ZM52.2551 18V1.62H49.2851V0.269999H57.1751V1.62H54.1451V18H52.2551ZM61.7998 18.21C61.3398 18.21 60.8698 18.14 60.3898 18C59.9298 17.88 59.5298 17.59 59.1898 17.13C58.8698 16.65 58.7098 15.91 58.7098 14.91V13.47C58.7098 12.47 59.0098 11.67 59.6098 11.07C60.2298 10.45 61.0698 9.9 62.1298 9.42C62.8098 9.08 63.3598 8.78 63.7798 8.52C64.2198 8.26 64.5498 7.97 64.7698 7.65C64.9898 7.33 65.0998 6.9 65.0998 6.36V5.73C65.0998 5.25 64.9998 4.88 64.7998 4.62C64.5998 4.36 64.3298 4.18 63.9898 4.08C63.6698 3.98 63.3298 3.93 62.9698 3.93C62.0698 3.93 61.4798 4.18 61.1998 4.68C60.9198 5.16 60.7798 5.88 60.7798 6.84V8.1H59.0698V6.66C59.0698 5.92 59.1698 5.27 59.3698 4.71C59.5698 4.13 59.9498 3.68 60.5098 3.36C61.0698 3.02 61.8898 2.85 62.9698 2.85C64.1098 2.85 64.9598 2.98 65.5198 3.24C66.0998 3.5 66.4798 3.87 66.6598 4.35C66.8598 4.83 66.9598 5.4 66.9598 6.06V18H65.1298L65.0998 16.14C64.8598 16.82 64.4298 17.34 63.8098 17.7C63.1898 18.04 62.5198 18.21 61.7998 18.21ZM62.4898 16.95C63.3898 16.95 64.0398 16.63 64.4398 15.99C64.8598 15.35 65.0698 14.5 65.0698 13.44V8.7C64.8698 9.02 64.5398 9.31 64.0798 9.57C63.6198 9.83 63.1498 10.09 62.6698 10.35C61.9898 10.75 61.4598 11.17 61.0798 11.61C60.7198 12.03 60.5398 12.62 60.5398 13.38V14.55C60.5398 15.27 60.6398 15.8 60.8398 16.14C61.0398 16.48 61.2898 16.7 61.5898 16.8C61.8898 16.9 62.1898 16.95 62.4898 16.95ZM68.801 18V16.92C69.201 16.92 69.531 16.74 69.791 16.38C70.071 16 70.241 15.44 70.301 14.7L71.261 3.18H78.761V18H76.871V4.53H73.121L72.161 15.21C72.141 15.47 72.101 15.76 72.041 16.08C71.981 16.4 71.871 16.71 71.711 17.01C71.571 17.29 71.351 17.53 71.051 17.73C70.751 17.91 70.351 18 69.851 18H68.801ZM82.0798 21.51C81.6598 21.51 81.2798 21.48 80.9398 21.42C80.6198 21.36 80.3698 21.31 80.1898 21.27V20.16C80.2498 20.2 80.3798 20.24 80.5798 20.28C80.7998 20.32 81.0498 20.34 81.3298 20.34C81.6298 20.34 81.9598 20.29 82.3198 20.19C82.6998 20.09 83.0098 19.81 83.2498 19.35C83.3698 19.15 83.4998 18.92 83.6398 18.66C83.7998 18.4 83.8398 18.1 83.7598 17.76L80.3398 3.15H82.2598L84.9898 16.11H84.9598L87.5998 3.15H89.3698L86.1298 17.43C85.8298 18.81 85.3598 19.83 84.7198 20.49C84.0798 21.17 83.1998 21.51 82.0798 21.51ZM94.9905 18.27C93.9905 18.27 93.1805 18.16 92.5605 17.94C91.9405 17.7 91.4905 17.27 91.2105 16.65C90.9305 16.03 90.7905 15.13 90.7905 13.95V6.54C90.7905 5.14 91.1005 4.18 91.7205 3.66C92.3605 3.14 93.4105 2.88 94.8705 2.88C96.2905 2.88 97.3105 3.14 97.9305 3.66C98.5705 4.18 98.8905 5.14 98.8905 6.54V10.38H92.6505V14.58C92.6505 15.54 92.8005 16.21 93.1005 16.59C93.4005 16.95 94.0105 17.13 94.9305 17.13C95.7705 17.13 96.3305 16.95 96.6105 16.59C96.8905 16.23 97.0305 15.56 97.0305 14.58V12.66H98.8905V13.92C98.8905 15.08 98.7505 15.98 98.4705 16.62C98.1905 17.24 97.7605 17.67 97.1805 17.91C96.6205 18.15 95.8905 18.27 94.9905 18.27ZM92.6505 9.42H97.0305V6.48C97.0305 5.64 96.8905 5.03 96.6105 4.65C96.3305 4.27 95.7505 4.08 94.8705 4.08C93.9905 4.08 93.4005 4.27 93.1005 4.65C92.8005 5.03 92.6505 5.64 92.6505 6.48V9.42ZM101.221 18V3.15H106.531C107.551 3.15 108.371 3.39 108.991 3.87C109.611 4.33 109.921 5.09 109.921 6.15V7.26C109.921 8.2 109.651 8.93 109.111 9.45C108.591 9.95 107.891 10.21 107.011 10.23V10.17C107.911 10.17 108.661 10.43 109.261 10.95C109.861 11.45 110.161 12.27 110.161 13.41V14.34C110.161 15.34 110.001 16.11 109.681 16.65C109.361 17.17 108.901 17.53 108.301 17.73C107.721 17.91 107.041 18 106.261 18H101.221ZM103.201 16.95H105.811C106.291 16.95 106.701 16.89 107.041 16.77C107.401 16.63 107.671 16.38 107.851 16.02C108.051 15.64 108.151 15.09 108.151 14.37V13.2C108.151 12.6 108.031 12.14 107.791 11.82C107.571 11.5 107.271 11.28 106.891 11.16C106.531 11.02 106.111 10.95 105.631 10.95H103.201V16.95ZM103.201 9.66H105.601C106.421 9.66 107.031 9.48 107.431 9.12C107.851 8.76 108.061 8.19 108.061 7.41V6.15C108.061 5.55 107.861 5.09 107.461 4.77C107.081 4.45 106.601 4.29 106.021 4.29H103.201V9.66ZM115.735 18.21C115.275 18.21 114.805 18.14 114.325 18C113.865 17.88 113.465 17.59 113.125 17.13C112.805 16.65 112.645 15.91 112.645 14.91V13.47C112.645 12.47 112.945 11.67 113.545 11.07C114.165 10.45 115.005 9.9 116.065 9.42C116.745 9.08 117.295 8.78 117.715 8.52C118.155 8.26 118.485 7.97 118.705 7.65C118.925 7.33 119.035 6.9 119.035 6.36V5.73C119.035 5.25 118.935 4.88 118.735 4.62C118.535 4.36 118.265 4.18 117.925 4.08C117.605 3.98 117.265 3.93 116.905 3.93C116.005 3.93 115.415 4.18 115.135 4.68C114.855 5.16 114.715 5.88 114.715 6.84V8.1H113.005V6.66C113.005 5.92 113.105 5.27 113.305 4.71C113.505 4.13 113.885 3.68 114.445 3.36C115.005 3.02 115.825 2.85 116.905 2.85C118.045 2.85 118.895 2.98 119.455 3.24C120.035 3.5 120.415 3.87 120.595 4.35C120.795 4.83 120.895 5.4 120.895 6.06V18H119.065L119.035 16.14C118.795 16.82 118.365 17.34 117.745 17.7C117.125 18.04 116.455 18.21 115.735 18.21ZM116.425 16.95C117.325 16.95 117.975 16.63 118.375 15.99C118.795 15.35 119.005 14.5 119.005 13.44V8.7C118.805 9.02 118.475 9.31 118.015 9.57C117.555 9.83 117.085 10.09 116.605 10.35C115.925 10.75 115.395 11.17 115.015 11.61C114.655 12.03 114.475 12.62 114.475 13.38V14.55C114.475 15.27 114.575 15.8 114.775 16.14C114.975 16.48 115.225 16.7 115.525 16.8C115.825 16.9 116.125 16.95 116.425 16.95Z"
+                  fill="#333333"
+                />
+              </svg>
+              <span class="visually-hidden">logotip</span>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Переключатель навигации"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+              <ul class="nav navbar-nav navbar-nav-scroll mt-4 mt-lg-0">
+                <li class="nav-item mx-2">
+                  <a
+                    href="#home"
+                    class="nav-link rounded-2 ps-2"
+                    aria-current="page"
+                    >Главная</a
+                  >
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a href="#cost" class="nav-link rounded-2 ps-2">Стоимость</a>
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a href="#reviews" class="nav-link rounded-2 ps-2">Отзывы</a>
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a href="#consultations" class="nav-link rounded-2 ps-2"
+                    >Этапы консультаций</a
+                  >
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a href="#about" class="nav-link rounded-2 ps-2">Обо мне</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <section
+        class="container-fluid hero-wrapper position-relative z-0 card-gradient"
+        id="home"
+      >
+        <div
+          class="section-hero container-xxl d-flex justify-content-center flex-column min-vh-100 no-vh-sm"
+        >
+          <div
+            class="row flex-lg-row-reverse align-items-center justify-content-between gy-5"
+          >
+            <div class="col-md-12 col-lg-6 col-xxl-3">
+              <img
+                src="/img/hero.jpg"
+                alt=""
+                width="400"
+                height="469"
+                class="d-none d-md-block img-fluid shadow-lg rounded mx-auto hero-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-6 col-xxl-7 position-relative">
+              <span
+                class="position-absolute top-0 end-0 border-top border-2 border-black w-25"
+                style="max-width: 90px"
+              >
+              </span>
+              <h1 class="h5 w-75 mb-4 balanced-text">
+                Профессиональный сертифицированный коуч по методике ICF
+              </h1>
+              <p class="h1 w-75 mb-4 lh-sm">Анна Талуева</p>
+              <p class="w-100">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. 
+              </p>
+
+              <button
+                class="btn btn-primary btn-lg px-4 z-0 position-relative my-3"
+                data-bs-toggle="modal"
+                data-bs-target="#mainModal"
+              >
+                Забронировать сессию
+              </button>
+
+              <ul class="nav fs-3 text-primary">
+                <li class="mx-2">
+                  <a href="#"><i class="bi bi-skype"></i></a>
+                </li>
+                <li class="mx-2">
+                  <a href="#"><i class="bi bi-telegram"></i></a>
+                </li>
+                <li class="mx-2">
+                  <a href="#"><i class="bi bi-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-reviews mb-5 py-5 bg-cc-bg" id="reviews">
+        <div class="container-xxl py-5">
+          <h2 class="pb-2 h1 text-center fw-bold mb-5">
+            Отзывы <span class="text-secondary">о коуч-сессиях</span>
+          </h2>
+          <div class="glide">
+            <div class="glide__track w-100" data-glide-el="track">
+              <ul
+                class="row row-cols-1 row-cols-lg-3 mx-0 g-4 justify-content-center align-items-stretch m-0 p-0 glide__slides"
+                style="gap: 10px"
+              >
+                <li
+                  class="review col px-sm-2 d-flex flex-column mb-3 glide__slide h-auto mx-0"
+                >
+                  <div
+                    class="review-header col d-flex align-items-center mb-5 mx-4"
+                  >
+                    <div
+                      class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                    >
+                      <img
+                        src="./img/review-1.jpg"
+                        alt="logo"
+                        width="70"
+                        height="70"
+                        class="rounded-5 shadow-sm"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="fs-4 fw-semibold text-cc-text mb-1">
+                        Featured title
+                      </h3>
+                      <p class="small fw-semibold mb-0 text-cc-text-gray">
+                        Paragraph of text
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="review-body bg-cc-bg-reviews rounded-4 pt-5 pe-3 pb-3 ps-4 shadow h-100"
+                  >
+                    <span class="bg-cc-bg-reviews shadow-lg"></span>
+                    <p class="fw-normal fs-6 lh-base text-cc-text">
+                      Paragraph of text beneath the heading to explain the
+                      heading. We'll add onto it with another sentence and
+                      probably just keep going until we run out of words.
+                    </p>
+                  </div>
+                </li>
+
+                <li
+                  class="review col px-sm-2 d-flex flex-column mb-3 glide__slide h-auto mx-0"
+                >
+                  <div
+                    class="review-header col d-flex align-items-center mb-5 mx-4"
+                  >
+                    <div
+                      class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                    >
+                      <img
+                        src="./img/review-1.jpg"
+                        alt="logo"
+                        width="70"
+                        height="70"
+                        class="rounded-5 shadow-sm"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="fs-4 fw-semibold text-cc-text mb-1">
+                        Featured title
+                      </h3>
+                      <p class="small fw-semibold mb-0 text-cc-text-gray">
+                        Paragraph of text
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="review-body bg-cc-bg-reviews rounded-4 pt-5 pe-3 pb-3 ps-4 shadow h-100"
+                  >
+                    <span class="bg-cc-bg-reviews shadow-lg"></span>
+                    <p class="fw-normal fs-6 lh-base text-cc-text">
+                      Paragraph of text beneath the heading to explain the
+                      heading. We'll add onto it with another sentence and
+                      probably just keep going until we run out of words.
+                    </p>
+                  </div>
+                </li>
+
+                <li
+                  class="review col px-sm-2 d-flex flex-column mb-3 glide__slide h-auto mx-0"
+                >
+                  <div
+                    class="review-header col d-flex align-items-center mb-5 mx-4"
+                  >
+                    <div
+                      class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                    >
+                      <img
+                        src="./img/review-1.jpg"
+                        alt="logo"
+                        width="70"
+                        height="70"
+                        class="rounded-5 shadow-sm"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="fs-4 fw-semibold text-cc-text mb-1">
+                        Featured title
+                      </h3>
+                      <p class="small fw-semibold mb-0 text-cc-text-gray">
+                        Paragraph of text
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="review-body bg-cc-bg-reviews rounded-4 pt-5 pe-3 pb-3 ps-4 shadow h-100"
+                  >
+                    <span class="bg-cc-bg-reviews shadow-lg"></span>
+                    <p class="fw-normal fs-6 lh-base text-cc-text">
+                      Paragraph of text beneath the heading to explain the
+                      heading. We'll add onto it with another sentence and
+                      probably just keep going until we run out of words.
+                    </p>
+                  </div>
+                </li>
+
+                <li
+                  class="review col px-sm-2 d-flex flex-column mb-3 glide__slide h-auto mx-0"
+                >
+                  <div
+                    class="review-header col d-flex align-items-center mb-5 mx-4"
+                  >
+                    <div
+                      class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                    >
+                      <img
+                        src="./img/review-1.jpg"
+                        alt="logo"
+                        width="70"
+                        height="70"
+                        class="rounded-5 shadow-sm"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="fs-4 fw-semibold text-cc-text mb-1">
+                        Featured title
+                      </h3>
+                      <p class="small fw-semibold mb-0 text-cc-text-gray">
+                        Paragraph of text
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="review-body bg-cc-bg-reviews rounded-4 pt-5 pe-3 pb-3 ps-4 shadow h-100"
+                  >
+                    <span class="bg-cc-bg-reviews shadow-lg"></span>
+                    <p class="fw-normal fs-6 lh-base text-cc-text">
+                      Paragraph of text beneath the heading to explain the
+                      Paragraph of text beneath the heading to explain the
+                      Paragraph of text beneath the heading to explain the
+                      Paragraph of text beneath the heading to explain the
+                      Paragraph of text beneath the heading to explain the
+                      Paragraph of text beneath the heading to explain the
+                      Paragraph of text beneath the heading to explain the s
+                      heading. We'll add onto it with another sentence and
+                      probably just keep going until we run out of words.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div data-glide-el="controls">
+              <button
+                class="slider__arrow slider__arrow--prev glide__arrow glide__arrow--prev position-arrow-start translate-middle-x shadow rounded-circle bg-light border-0 text-cc-text-gray"
+                data-glide-dir="<"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-caret-left-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next position-arrow-end translate-middle-x shadow rounded-circle bg-light border-0 text-cc-text-gray"
+                data-glide-dir=">"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-caret-right-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-prices py-5 bg-cc-bg-card min-vh-100 d-flex flex-column align-items-center justify-content-center"
+        id="cost"
+      >
+        <div class="container-xxl py-5 h-100">
+          <h2 class="pb-2 h2 text-center fw-bold mb-5">
+            Цена <span class="text-secondary">коучинга</span>
+          </h2>
+
+          <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-cc-text-gray opacity-50"
+                role="tab"
+                href="#price-1"
+                data-bs-toggle="tab"
+                >Активная</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link text-cc-text-gray opacity-50"
+                role="tab"
+                href="#price-2"
+                data-bs-toggle="tab"
+                >Активная-2</a
+              >
+            </li>
+          </ul>
+
+          <div class="tab-content mt-5">
+            <div role="tabpanel" class="tab-pane active" id="price-1">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-0 g-4">
+                <div class="ps-0 my-4">
+                  <div class="card shadow">
+                    <div class="card-header card-gradient">
+                      <h3 class="card-title text-center mb-0 h4">
+                        Консультация 1
+                      </h3>
+                    </div>
+
+                    <div
+                      class="card-body d-flex align-items-center justify-content-center flex-column"
+                    >
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+
+                      <a href="#" class="btn btn-primary mt-3 w-sm-100"
+                        >Узнать</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="py-0 my-4">
+                  <div class="card shadow">
+                    <div class="card-header card-gradient">
+                      <h3 class="card-title text-center mb-0 h4">
+                        Консультация 2
+                      </h3>
+                    </div>
+
+                    <div
+                      class="card-body d-flex align-items-center justify-content-center flex-column"
+                    >
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+
+                      <a href="#" class="btn btn-primary mt-3 w-sm-100"
+                        >Узнать</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pe-0 my-4">
+                  <div class="card shadow">
+                    <div class="card-header card-gradient">
+                      <h3 class="card-title text-center mb-0 h4">
+                        Консультация 3
+                      </h3>
+                    </div>
+
+                    <div
+                      class="card-body d-flex align-items-center justify-content-center flex-column"
+                    >
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+
+                      <a href="#" class="btn btn-primary mt-3 w-sm-100"
+                        >Узнать</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="price-2">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-0 g-4">
+                <div class="ps-0 my-4">
+                  <div class="card shadow">
+                    <div class="card-header card-gradient">
+                      <h3 class="card-title text-center mb-0 h4">
+                        Консультация 4
+                      </h3>
+                    </div>
+
+                    <div
+                      class="card-body d-flex align-items-center justify-content-center flex-column"
+                    >
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+
+                      <a href="#" class="btn btn-primary mt-3 w-sm-100"
+                        >Узнать</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="py-0 my-4">
+                  <div class="card shadow">
+                    <div class="card-header card-gradient">
+                      <h3 class="card-title text-center mb-0 h4">
+                        Консультация 5
+                      </h3>
+                    </div>
+
+                    <div
+                      class="card-body d-flex align-items-center justify-content-center flex-column"
+                    >
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+
+                      <a href="#" class="btn btn-primary mt-3 w-sm-100"
+                        >Узнать</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pe-0 my-4">
+                  <div class="card shadow">
+                    <div class="card-header card-gradient">
+                      <h3 class="card-title text-center mb-0 h4">
+                        Консультация 6
+                      </h3>
+                    </div>
+
+                    <div
+                      class="card-body d-flex align-items-center justify-content-center flex-column"
+                    >
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+                      <p class="card-text text-center h6 fw-normal">1234</p>
+
+                      <a href="#" class="btn btn-primary mt-3 w-sm-100"
+                        >Узнать</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-consultation py-5 bg-cc-bg" id="consultations">
+        <div class="container-xxl py-5">
+          <h2 class="pb-2 h1 text-center fw-bold mb-5">
+            Список <span class="text-secondary">публикаций</span>
+          </h2>
+
+          <div class="row g-4">
+            <div class="col-lg-4 col-sm-4 column col-12">
+              <div
+                class="consultation-body d-flex flex-column align-items-start bg-cc-bg-reviews shadow px-3 py-5 rounded-5"
+              >
+                <img
+                  src="./img/icons-1.png"
+                  class="object-fit-cover mb-3"
+                  style="max-width: 100px; height: auto"
+                  alt="..."
+                />
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                  facilis vel aliquam aspernatur dolor placeat totam saepe
+                  perferendis. Odio quia vel sed eveniet cupiditate, illum
+                  doloremque sint veniam eum? Corporis?
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 column col-12">
+              <div
+                class="consultation-body d-flex flex-column align-items-start bg-cc-bg-reviews shadow px-3 py-5 rounded-5"
+              >
+                <img
+                  src="./img/icons-2.png"
+                  class="object-fit-cover mb-3"
+                  style="max-width: 100px; height: auto"
+                  alt="..."
+                />
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                  facilis vel aliquam aspernatur dolor placeat totam saepe
+                  perferendis. Odio quia vel sed eveniet cupiditate, illum
+                  doloremque sint veniam eum? Corporis?
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 column col-12">
+              <div
+                class="consultation-body d-flex flex-column align-items-start bg-cc-bg-reviews shadow px-3 py-5 rounded-5"
+              >
+                <img
+                  src="./img/icons-3.png"
+                  class="object-fit-cover mb-3"
+                  style="max-width: 100px; height: auto"
+                  alt="..."
+                />
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                  facilis vel aliquam aspernatur dolor placeat totam saepe
+                  perferendis. Odio quia vel sed eveniet cupiditate, illum
+                  doloremque sint veniam eum? Corporis?
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-1 column col-lg-2 col-1 m-0"></div>
+            <div class="col-sm-5 column col-lg-4 col-12">
+              <div
+                class="consultation-body d-flex flex-column align-items-start bg-cc-bg-reviews shadow px-3 py-5 rounded-5"
+              >
+                <img
+                  src="./img/icons-4.png"
+                  class="object-fit-cover mb-3"
+                  style="max-width: 100px; height: auto"
+                  alt="..."
+                />
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                  facilis vel aliquam aspernatur dolor placeat totam saepe
+                  perferendis. Odio quia vel sed eveniet cupiditate, illum
+                  doloremque sint veniam eum? Corporis?
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-5 column col-lg-4 col-12">
+              <div
+                class="consultation-body d-flex flex-column align-items-start bg-cc-bg-reviews shadow px-3 py-5 rounded-5"
+              >
+                <img
+                  src="./img/icons-5.png"
+                  class="object-fit-cover mb-3"
+                  style="max-width: 100px; height: auto"
+                  alt="..."
+                />
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                  facilis vel aliquam aspernatur dolor placeat totam saepe
+                  perferendis. Odio quia vel sed eveniet cupiditate, illum
+                  doloremque sint veniam eum? Corporis?
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-1 column col-lg-2 col-1 m-0"></div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-about container-xxl d-flex justify-content-center flex-column min-vh-100 no-vh-sm"
+        id="about"
+      >
+        <div
+          class="row flex-lg-row-reverse align-items-end justify-content-between gy-5"
+        >
+          <div class="col-md-12 col-lg-6 col-xxl-4">
+            <img
+              src="/img/about-me.jpg"
+              alt=""
+              width="400"
+              height="600"
+              class="d-block img-fluid shadow-lg rounded mx-auto hero-img"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="d-flex flex-column align-items-start justify-content-end col-lg-6 col-xxl-7 position-relative"
+          >
+            <h2
+              class="h2 w-100 mb-4 balanced-text fw-bold border-top border-2 border-black w-100 pt-4"
+            >
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old.
+            </h2>
+            <p class="w-100 mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <p class="w-100">
+              It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum
+            </p>
+
+            <button
+              class="btn btn-primary btn-lg px-4 z-0 position-relative"
+              data-bs-toggle="modal"
+              data-bs-target="#mainModal"
+            >
+              Записаться
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-timeline min-vh-100 d-flex align-items-center justify-content-center"
+      >
+        <div class="container-xxl">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-6 my-5 my-md-0">
+              <div class="d-flex align-items-stretch my-3">
+                <h2
+                  class="h3 fs-6 py-2 px-4 border rounded-top-0 rounded-bottom-5 rounded-end-5 text-center m-0 fw-bold w-100 w-sm-auto"
+                >
+                  Кому нужен коуч?
+                </h2>
+              </div>
+              <div
+                class="d-flex flex-column align-items-start justify-content-end position-relative"
+              >
+                <h3 class="h2 w-100 mb-4 balanced-text fw-bold">
+                  Lorem Ipsum is simply dummy text of the printing
+                </h3>
+                <p class="w-100">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 my-5 my-md-0">
+              <!-- Timeline -->
+              <div class="timeline timeline-six px-sm-0">
+                <div class="row g-0 timeline-text-open">
+                  <div
+                    class="col-sm-2 col-md-1 text-center flex-column d-sm-flex justify-content-between"
+                  >
+                    <div class="d-flex h-30 d-none d-sm-flex">
+                      <div class="col">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                    <span
+                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-normal lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
+                    >
+                      1
+                    </span>
+
+                    <div class="d-flex h-30 d-none d-sm-flex">
+                      <div class="col middle-line">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                  </div>
+                  <!-- timeline profile card -->
+                  <div class="col-sm py-2 ms-sm-5">
+                    <div
+                      class="bg-cc-timeline-card-color shadow p-4 rounded-4 timeline-item-wrapper-text position-relative"
+                    >
+                      <h4 class="h4 fw-bold text-cc-text">РАБОТНИК</h4>
+                      <p class="text-cc-text fs-5 fw-normal lh-sm">
+                        It is a long established fact that a reader will be
+                        distracted
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline timeline-six px-sm-0">
+                <div class="row g-0">
+                  <div
+                    class="col-sm-2 col-md-1 text-center flex-column d-sm-flex justify-content-between"
+                  >
+                    <div class="d-flex h-30">
+                      <div class="col middle-line">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                    <span
+                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-normal lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
+                    >
+                      2
+                    </span>
+                    <div class="d-flex h-30">
+                      <div class="col middle-line">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                  </div>
+                  <!-- timeline profile card -->
+                  <div class="col-sm py-2 ms-sm-5">
+                    <div
+                      class="bg-cc-timeline-card-color shadow p-4 rounded-4 timeline-item-wrapper-text position-relative"
+                    >
+                      <h4 class="h4 fw-bold text-cc-text">БИЗНЕСМЕН</h4>
+                      <p class="text-cc-text fs-5 fw-normal lh-sm">
+                        It is a long established fact that a reader will be
+                        distracted
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline timeline-six px-sm-0">
+                <div class="row g-0">
+                  <div
+                    class="col-sm-2 col-md-1 text-center flex-column d-sm-flex justify-content-between"
+                  >
+                    <div class="d-flex h-30">
+                      <div class="col middle-line">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                    <span
+                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-normal lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
+                    >
+                      3
+                    </span>
+                    <div class="d-flex h-30">
+                      <div class="col middle-line">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                  </div>
+                  <!-- timeline profile card -->
+                  <div class="col-sm py-2 ms-sm-5">
+                    <div
+                      class="bg-cc-timeline-card-color shadow p-4 rounded-4 timeline-item-wrapper-text position-relative"
+                    >
+                      <h4 class="h4 fw-bold text-cc-text">ТОП-МЕНЕДЖЕР</h4>
+                      <p class="text-cc-text fs-5 fw-normal lh-sm">
+                        It is a long established fact that a reader will be
+                        distracted
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline timeline-six px-sm-0">
+                <div class="row g-0">
+                  <div
+                    class="col-sm-2 col-md-1 text-center flex-column d-sm-flex justify-content-between"
+                  >
+                    <div class="d-flex h-30">
+                      <div class="col middle-line">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                    <span
+                      class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-normal lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
+                    >
+                      4
+                    </span>
+                    <div class="d-flex h-30">
+                      <div class="col middle-line d-flex d-sm-none">&nbsp;</div>
+                      <div class="col d-flex d-sm-none">&nbsp;</div>
+                    </div>
+                  </div>
+                  <!-- timeline profile card -->
+                  <div class="col-sm py-2 ms-sm-5">
+                    <div
+                      class="bg-cc-timeline-card-color shadow p-4 rounded-4 timeline-item-wrapper-text position-relative"
+                    >
+                      <h4 class="h4 fw-bold text-cc-text">ВЛАДЕЛЕЦ КОМПАНИИ</h4>
+                      <p class="text-cc-text fs-5 fw-normal lh-sm">
+                        It is a long established fact that a reader will be
+                        distracted
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Timeline -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-publications py-5 bg-cc-bg">
+        <div class="container-xxl py-5">
+          <h2 class="pb-2 h1 text-center fw-bold mb-5">
+            Список <span class="text-secondary">публикаций</span>
+          </h2>
+
+          <h3 class="pb-2 mb-5">Последние публикации</h3>
+          <!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-0 g-4">
+          
+
+            <div class="col p-0 p-sm-3">
+              <div class="card bg-cc-bg-reviews shadow rounded-5">
+                <img
+                  src="./img/links.jpg"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title lh-1 m-0 text-uppercase">
+                    Заголовок карточки
+                  </h5>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between text-dark"
+                >
+                  <p class="card-text m-0 text-text-dark opacity-25">
+                    15/05/24
+                  </p>
+
+                  <a
+                    href="#"
+                    class="icon-link icon-link-hover text-decoration-none link-cc-blue fw-bold"
+                  >
+                    Voir détail
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-arrow-right ms-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col p-0 p-sm-3">
+              <div class="card bg-cc-bg-reviews shadow rounded-5">
+                <img
+                  src="./img/links.jpg"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title lh-1 m-0 text-uppercase">
+                    Заголовок карточки
+                  </h5>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between text-dark"
+                >
+                  <p class="card-text m-0 text-text-dark opacity-25">
+                    15/05/24
+                  </p>
+
+                  <a
+                    href="#"
+                    class="icon-link icon-link-hover text-decoration-none link-cc-blue fw-bold"
+                  >
+                    Voir détail
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-arrow-right ms-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="glide-publications position-relative">
+            <div class="glide__track w-100" data-glide-el="track">
+              <ul
+                class="row row-cols-1 row-cols-lg-3 mx-0 g-4 justify-content-center align-items-stretch m-0 p-0 glide__slides"
+                style="gap: 10px"
+              >
+                <li
+                  class="review col px-sm-2 d-flex flex-column mb-3 glide__slide h-auto mx-0"
+                >
+                  <div class="card bg-cc-bg-reviews shadow rounded-5">
+                    <img
+                      src="./img/links.jpg"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title lh-1 m-0 text-uppercase">
+                        Заголовок карточки
+                      </h5>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between text-dark"
+                    >
+                      <p class="card-text m-0 text-text-dark opacity-25">
+                        15/05/24
+                      </p>
+
+                      <a
+                        href="#"
+                        class="icon-link icon-link-hover text-decoration-none link-cc-blue fw-bold"
+                      >
+                        Voir détail
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-arrow-right ms-2"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="review col px-sm-2 d-flex flex-column mb-3 glide__slide h-auto mx-0"
+                >
+                  <div class="card bg-cc-bg-reviews shadow rounded-5">
+                    <img
+                      src="./img/links.jpg"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title lh-1 m-0 text-uppercase">
+                        Заголовок карточки
+                      </h5>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between text-dark"
+                    >
+                      <p class="card-text m-0 text-text-dark opacity-25">
+                        15/05/24
+                      </p>
+
+                      <a
+                        href="#"
+                        class="icon-link icon-link-hover text-decoration-none link-cc-blue fw-bold"
+                      >
+                        Voir détail
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-arrow-right ms-2"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="review col px-sm-2 d-flex flex-column mb-3 glide__slide h-auto mx-0"
+                >
+                  <div class="card bg-cc-bg-reviews shadow rounded-5">
+                    <img
+                      src="./img/links.jpg"
+                      class="card-img-top rounded-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title lh-1 m-0 text-uppercase">
+                        Заголовок карточки
+                      </h5>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between text-dark"
+                    >
+                      <p class="card-text m-0 text-text-dark opacity-25">
+                        15/05/24
+                      </p>
+
+                      <a
+                        href="#"
+                        class="icon-link icon-link-hover text-decoration-none link-cc-blue fw-bold"
+                      >
+                        Voir détail
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-arrow-right ms-2"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div data-glide-el="controls">
+              <button
+                class="slider__arrow slider__arrow--prev glide__arrow glide__arrow--prev position-arrow-start translate-middle-x shadow rounded-circle bg-light border-0 text-cc-text-gray"
+                data-glide-dir="<"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-caret-left-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next position-arrow-end translate-middle-x shadow rounded-circle bg-light border-0 text-cc-text-gray"
+                data-glide-dir=">"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-caret-right-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-cc-bg-card pt-5">
+      <div class="container-xxl">
+        <div class="row row-cols-1 row-cols-md-4 pb-4">
+          <div class="col col-md-12 col-lg-5 mb-3">
+            <a href="/" class="d-flex align-items-center me-md-auto w-100 mb-3">
+              <svg
+                width="121"
+                height="22"
+                viewBox="0 0 121 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.45 18L4.38 0.269999H6.81L10.68 18H8.64L7.68 13.89H3.33L2.43 18H0.45ZM3.39 12.84H7.65L5.55 2.58L3.39 12.84ZM12.3928 18V3.15H14.2528V9.48H18.9628V3.15H20.8228V18H18.9628V10.92H14.2528V18H12.3928ZM23.3498 18V3.15H25.2098V9.48H29.9198V3.15H31.7798V18H29.9198V10.92H25.2098V18H23.3498ZM37.3369 18.21C36.8769 18.21 36.4069 18.14 35.9269 18C35.4669 17.88 35.0669 17.59 34.7269 17.13C34.4069 16.65 34.2469 15.91 34.2469 14.91V13.47C34.2469 12.47 34.5469 11.67 35.1469 11.07C35.7669 10.45 36.6069 9.9 37.6669 9.42C38.3469 9.08 38.8969 8.78 39.3169 8.52C39.7569 8.26 40.0869 7.97 40.3069 7.65C40.5269 7.33 40.6369 6.9 40.6369 6.36V5.73C40.6369 5.25 40.5369 4.88 40.3369 4.62C40.1369 4.36 39.8669 4.18 39.5269 4.08C39.2069 3.98 38.8669 3.93 38.5069 3.93C37.6069 3.93 37.0169 4.18 36.7369 4.68C36.4569 5.16 36.3169 5.88 36.3169 6.84V8.1H34.6069V6.66C34.6069 5.92 34.7069 5.27 34.9069 4.71C35.1069 4.13 35.4869 3.68 36.0469 3.36C36.6069 3.02 37.4269 2.85 38.5069 2.85C39.6469 2.85 40.4969 2.98 41.0569 3.24C41.6369 3.5 42.0169 3.87 42.1969 4.35C42.3969 4.83 42.4969 5.4 42.4969 6.06V18H40.6669L40.6369 16.14C40.3969 16.82 39.9669 17.34 39.3469 17.7C38.7269 18.04 38.0569 18.21 37.3369 18.21ZM38.0269 16.95C38.9269 16.95 39.5769 16.63 39.9769 15.99C40.3969 15.35 40.6069 14.5 40.6069 13.44V8.7C40.4069 9.02 40.0769 9.31 39.6169 9.57C39.1569 9.83 38.6869 10.09 38.2069 10.35C37.5269 10.75 36.9969 11.17 36.6169 11.61C36.2569 12.03 36.0769 12.62 36.0769 13.38V14.55C36.0769 15.27 36.1769 15.8 36.3769 16.14C36.5769 16.48 36.8269 16.7 37.1269 16.8C37.4269 16.9 37.7269 16.95 38.0269 16.95ZM52.2551 18V1.62H49.2851V0.269999H57.1751V1.62H54.1451V18H52.2551ZM61.7998 18.21C61.3398 18.21 60.8698 18.14 60.3898 18C59.9298 17.88 59.5298 17.59 59.1898 17.13C58.8698 16.65 58.7098 15.91 58.7098 14.91V13.47C58.7098 12.47 59.0098 11.67 59.6098 11.07C60.2298 10.45 61.0698 9.9 62.1298 9.42C62.8098 9.08 63.3598 8.78 63.7798 8.52C64.2198 8.26 64.5498 7.97 64.7698 7.65C64.9898 7.33 65.0998 6.9 65.0998 6.36V5.73C65.0998 5.25 64.9998 4.88 64.7998 4.62C64.5998 4.36 64.3298 4.18 63.9898 4.08C63.6698 3.98 63.3298 3.93 62.9698 3.93C62.0698 3.93 61.4798 4.18 61.1998 4.68C60.9198 5.16 60.7798 5.88 60.7798 6.84V8.1H59.0698V6.66C59.0698 5.92 59.1698 5.27 59.3698 4.71C59.5698 4.13 59.9498 3.68 60.5098 3.36C61.0698 3.02 61.8898 2.85 62.9698 2.85C64.1098 2.85 64.9598 2.98 65.5198 3.24C66.0998 3.5 66.4798 3.87 66.6598 4.35C66.8598 4.83 66.9598 5.4 66.9598 6.06V18H65.1298L65.0998 16.14C64.8598 16.82 64.4298 17.34 63.8098 17.7C63.1898 18.04 62.5198 18.21 61.7998 18.21ZM62.4898 16.95C63.3898 16.95 64.0398 16.63 64.4398 15.99C64.8598 15.35 65.0698 14.5 65.0698 13.44V8.7C64.8698 9.02 64.5398 9.31 64.0798 9.57C63.6198 9.83 63.1498 10.09 62.6698 10.35C61.9898 10.75 61.4598 11.17 61.0798 11.61C60.7198 12.03 60.5398 12.62 60.5398 13.38V14.55C60.5398 15.27 60.6398 15.8 60.8398 16.14C61.0398 16.48 61.2898 16.7 61.5898 16.8C61.8898 16.9 62.1898 16.95 62.4898 16.95ZM68.801 18V16.92C69.201 16.92 69.531 16.74 69.791 16.38C70.071 16 70.241 15.44 70.301 14.7L71.261 3.18H78.761V18H76.871V4.53H73.121L72.161 15.21C72.141 15.47 72.101 15.76 72.041 16.08C71.981 16.4 71.871 16.71 71.711 17.01C71.571 17.29 71.351 17.53 71.051 17.73C70.751 17.91 70.351 18 69.851 18H68.801ZM82.0798 21.51C81.6598 21.51 81.2798 21.48 80.9398 21.42C80.6198 21.36 80.3698 21.31 80.1898 21.27V20.16C80.2498 20.2 80.3798 20.24 80.5798 20.28C80.7998 20.32 81.0498 20.34 81.3298 20.34C81.6298 20.34 81.9598 20.29 82.3198 20.19C82.6998 20.09 83.0098 19.81 83.2498 19.35C83.3698 19.15 83.4998 18.92 83.6398 18.66C83.7998 18.4 83.8398 18.1 83.7598 17.76L80.3398 3.15H82.2598L84.9898 16.11H84.9598L87.5998 3.15H89.3698L86.1298 17.43C85.8298 18.81 85.3598 19.83 84.7198 20.49C84.0798 21.17 83.1998 21.51 82.0798 21.51ZM94.9905 18.27C93.9905 18.27 93.1805 18.16 92.5605 17.94C91.9405 17.7 91.4905 17.27 91.2105 16.65C90.9305 16.03 90.7905 15.13 90.7905 13.95V6.54C90.7905 5.14 91.1005 4.18 91.7205 3.66C92.3605 3.14 93.4105 2.88 94.8705 2.88C96.2905 2.88 97.3105 3.14 97.9305 3.66C98.5705 4.18 98.8905 5.14 98.8905 6.54V10.38H92.6505V14.58C92.6505 15.54 92.8005 16.21 93.1005 16.59C93.4005 16.95 94.0105 17.13 94.9305 17.13C95.7705 17.13 96.3305 16.95 96.6105 16.59C96.8905 16.23 97.0305 15.56 97.0305 14.58V12.66H98.8905V13.92C98.8905 15.08 98.7505 15.98 98.4705 16.62C98.1905 17.24 97.7605 17.67 97.1805 17.91C96.6205 18.15 95.8905 18.27 94.9905 18.27ZM92.6505 9.42H97.0305V6.48C97.0305 5.64 96.8905 5.03 96.6105 4.65C96.3305 4.27 95.7505 4.08 94.8705 4.08C93.9905 4.08 93.4005 4.27 93.1005 4.65C92.8005 5.03 92.6505 5.64 92.6505 6.48V9.42ZM101.221 18V3.15H106.531C107.551 3.15 108.371 3.39 108.991 3.87C109.611 4.33 109.921 5.09 109.921 6.15V7.26C109.921 8.2 109.651 8.93 109.111 9.45C108.591 9.95 107.891 10.21 107.011 10.23V10.17C107.911 10.17 108.661 10.43 109.261 10.95C109.861 11.45 110.161 12.27 110.161 13.41V14.34C110.161 15.34 110.001 16.11 109.681 16.65C109.361 17.17 108.901 17.53 108.301 17.73C107.721 17.91 107.041 18 106.261 18H101.221ZM103.201 16.95H105.811C106.291 16.95 106.701 16.89 107.041 16.77C107.401 16.63 107.671 16.38 107.851 16.02C108.051 15.64 108.151 15.09 108.151 14.37V13.2C108.151 12.6 108.031 12.14 107.791 11.82C107.571 11.5 107.271 11.28 106.891 11.16C106.531 11.02 106.111 10.95 105.631 10.95H103.201V16.95ZM103.201 9.66H105.601C106.421 9.66 107.031 9.48 107.431 9.12C107.851 8.76 108.061 8.19 108.061 7.41V6.15C108.061 5.55 107.861 5.09 107.461 4.77C107.081 4.45 106.601 4.29 106.021 4.29H103.201V9.66ZM115.735 18.21C115.275 18.21 114.805 18.14 114.325 18C113.865 17.88 113.465 17.59 113.125 17.13C112.805 16.65 112.645 15.91 112.645 14.91V13.47C112.645 12.47 112.945 11.67 113.545 11.07C114.165 10.45 115.005 9.9 116.065 9.42C116.745 9.08 117.295 8.78 117.715 8.52C118.155 8.26 118.485 7.97 118.705 7.65C118.925 7.33 119.035 6.9 119.035 6.36V5.73C119.035 5.25 118.935 4.88 118.735 4.62C118.535 4.36 118.265 4.18 117.925 4.08C117.605 3.98 117.265 3.93 116.905 3.93C116.005 3.93 115.415 4.18 115.135 4.68C114.855 5.16 114.715 5.88 114.715 6.84V8.1H113.005V6.66C113.005 5.92 113.105 5.27 113.305 4.71C113.505 4.13 113.885 3.68 114.445 3.36C115.005 3.02 115.825 2.85 116.905 2.85C118.045 2.85 118.895 2.98 119.455 3.24C120.035 3.5 120.415 3.87 120.595 4.35C120.795 4.83 120.895 5.4 120.895 6.06V18H119.065L119.035 16.14C118.795 16.82 118.365 17.34 117.745 17.7C117.125 18.04 116.455 18.21 115.735 18.21ZM116.425 16.95C117.325 16.95 117.975 16.63 118.375 15.99C118.795 15.35 119.005 14.5 119.005 13.44V8.7C118.805 9.02 118.475 9.31 118.015 9.57C117.555 9.83 117.085 10.09 116.605 10.35C115.925 10.75 115.395 11.17 115.015 11.61C114.655 12.03 114.475 12.62 114.475 13.38V14.55C114.475 15.27 114.575 15.8 114.775 16.14C114.975 16.48 115.225 16.7 115.525 16.8C115.825 16.9 116.125 16.95 116.425 16.95Z"
+                  fill="#333333"
+                />
+              </svg>
+              <span class="visually-hidden">logotip</span>
+              <!--TODO -->
+            </a>
+
+            <p class="text-cc-text fs-6 fw-normal lh-sm balanced-text me-2">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour
+            </p>
+          </div>
+
+          <div class="col col-sm-6 col-md-4 col-lg-3 mb-3">
+            <h5 class="mb-3 h5 fw-semibold text-cc-text">Контакты</h5>
+
+            <a
+              class="icon-link text-decoration-none link-cc-text w-100 mb-2"
+              href="#"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-telephone-fill me-3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                />
+              </svg>
+              +216 12 123 113
+            </a>
+
+            <a
+              class="icon-link text-decoration-none link-cc-text w-100 mb-2"
+              href="#"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope-fill me-3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                />
+              </svg>
+              Contact.coach@gmail.com
+            </a>
+          </div>
+
+          <div class="col col-sm-6 col-md-4 col-lg-2 mb-3">
+            <h5 class="mb-3 h5 fw-semibold text-cc-text">Мы тут:</h5>
+
+            <ul class="nav fs-5">
+              <li class="mx-2">
+                <a class="text-body-secondary" href="#"
+                  ><i class="bi bi-skype"></i
+                ></a>
+              </li>
+              <li class="mx-2">
+                <a class="text-body-secondary" href="#"
+                  ><i class="bi bi-telegram"></i
+                ></a>
+              </li>
+              <li class="mx-2">
+                <a class="text-body-secondary" href="#"
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col col-md-4 col-lg-2 mb-3">
+            <h5 class="mb-3 h5 fw-semibold text-cc-text">Навигация</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#home" class="nav-link p-0 text-body-secondary"
+                  >Главная</a
+                >
+              </li>
+
+              <li class="nav-item mb-2">
+                <a href="#cost" class="nav-link p-0 text-body-secondary"
+                  >Стоимость</a
+                >
+              </li>
+
+              <li class="nav-item mb-2">
+                <a href="#reviews" class="nav-link p-0 text-body-secondary"
+                  >Отзывы</a
+                >
+              </li>
+
+              <li class="nav-item mb-2">
+                <a
+                  href="#consultations"
+                  class="nav-link p-0 text-body-secondary"
+                  >Этапы консультаций</a
+                >
+              </li>
+
+              <li class="nav-item mb-2">
+                <a href="#about" class="nav-link p-0 text-body-secondary"
+                  >Обо мне</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-body-secondary m-0 pb-3 fw-semibold">
+        ©2024. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- fade -->
+    <div
+      class="modal"
+      id="mainModal"
+      tabindex="-1"
+      aria-labelledby="mainModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down"
+      >
+        <div class="modal-content card-gradient">
+          <div class="modal-header border-0">
+            <h5 class="h5">Заполните, пожалуйста, форму</h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+
+          <div
+            class="modal-body d-flex flex-column align-items-center justify-content-center"
+          >
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-6 position-relative">
+                <label for="validationTooltip01" class="form-label">Имя</label>
+                <input
+                  type="text"
+                  class="form-control shadow border-0"
+                  id="validationTooltip01"
+                  placeholder="Как к вам обращаться?"
+                  required
+                />
+                <div class="valid-tooltip">Все хорошо!</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="validationTooltip01" class="form-label"
+                  >Email</label
+                >
+                <input
+                  class="form-control shadow border-0"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail Address"
+                  required=""
+                />
+                <div class="valid-feedback">Email field is valid!</div>
+                <div class="invalid-feedback">Email field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <p class="">Выберите сферу проблем</p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input shadow border-0"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    required=""
+                  />
+                  <label class="form-check-label" for="flexCheckChecked"
+                    >Проблема 1</label
+                  >
+                  <div class="invalid-feedback">
+                    Please confirm that the entered data are all correct!
+                  </div>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input shadow border-0"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked2"
+                    required=""
+                  />
+                  <label class="form-check-label" for="flexCheckChecked2"
+                    >Проблема 2</label
+                  >
+                  <div class="invalid-feedback">
+                    Please confirm that the entered data are all correct!
+                  </div>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input shadow border-0"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked3"
+                    required=""
+                  />
+                  <label class="form-check-label" for="flexCheckChecked3"
+                    >Проблема 3</label
+                  >
+                  <div class="invalid-feedback">
+                    Please confirm that the entered data are all correct!
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex flex-column align-items-start">
+                <button class="btn btn-primary px-4 mt-4" type="submit">
+                  Отправить форму
+                </button>
+                <span class="fw-light mt-2" style="font-size: 0.8rem"
+                  >* Нажимая на кнопку отправить вы согласны с нашей политикой
+                  защиты информации</span
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

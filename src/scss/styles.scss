@@ -1,0 +1,201 @@
+// Configuration
+@import "bootstrap/scss/functions";
+
+@import "@/scss/custom/variables";
+@import "@/scss/custom/timeline";
+
+$theme-colors: map-remove($theme-colors, "teal", "pink", "indigo", "purple", "blue", "orange", "cyan", "gray-500");
+
+@debug $theme-colors;
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// Layout & components
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
+@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/placeholders";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+
+.header {
+    min-height: 5rem;
+}
+
+.hero-wrapper {
+    &::after {
+        content: url("./img/hero-bg.svg");
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        right: 0;
+        z-index: -1;
+        max-height: 400px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 775.98px) {
+    .hero {
+        justify-content: end !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-wrapper::after {
+        content: url("./img/hero-bg-small.svg");
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero-img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+.balanced-text {
+    text-wrap: balance;
+}
+
+.review-body {
+    position: relative;
+
+    span {
+        aspect-ratio: 1;
+        border: inherit;
+        -webkit-clip-path: polygon(0% 0, 0 100%, 100% 0);
+        clip-path: polygon(0% 0, 0 100%, 100% 0);
+        content: "";
+        left: 40px;
+        position: absolute;
+        rotate: 45deg;
+        top: 0;
+        width: 40px;
+        translate: 0 -50%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    /* sm breakpoint */
+    .no-vh-sm {
+        height: auto !important;
+    }
+}
+
+.card-gradient {
+    background: $linear-gradient;
+}
+
+.h-30 {
+    height: 30% !important;
+}
+
+@media (max-width: 576px) {
+    .h-30 {
+        height: auto !important;
+    }
+    .w-sm-100 {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .w-sm-auto {
+        width: auto !important;
+    }
+}
+
+.nav-link.active {
+    color: $navbar-active-color !important;
+    background-color: $primary;
+}
+
+.nav-pills .nav-link.active {
+    color: $text-dark !important;
+    text-decoration: underline;
+    opacity: 1 !important;
+}
+
+.navbar-toggler {
+    --bs-navbar-toggler-border-color: transparent;
+}
+
+.position-arrow-start {
+    top: 50%;
+    left: 2% !important;
+}
+
+.position-arrow-end {
+    top: 50%;
+    left: 99% !important;
+}
+
+@media (max-width: 576px) {
+    .position-arrow-end,
+    .position-arrow-start {
+        top: 100% !important;
+    }    
+
+    .position-arrow-start {
+        left: inherit !important; 
+        right: 40% !important;
+        margin-inline-end: 0.5rem;
+
+    }
+
+    .position-arrow-end {
+        right: inherit !important;
+        left: 60% !important;
+    }
+}
+
+.glide__track {
+    max-width: 1210px;
+    margin: 0 auto;
+}

@@ -1,0 +1,36 @@
+.timeline {
+    width: 100%;
+}
+
+.timeline.timeline-six .row .col.middle-line {
+    border-right: 0.1875rem solid $secondary;
+}
+
+@media (min-width: 768px) {
+    .timeline-item-wrapper-text::after {
+        aspect-ratio: 1;
+        background-color: var(--bs-cc-timeline-card-color);
+        -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+        clip-path: polygon(0 0, 0 100%, 100% 100%);
+        content: "";
+        left: -1rem;
+        position: absolute;
+        rotate: 45deg;
+        top: 50%;
+        translate: 0 -50%;
+        width: 2.5rem;
+    }
+}
+
+.timeline.timeline-six .timeline-text-open span,
+.timeline.timeline-six .timeline-text-open .timeline-item-wrapper-text,
+.timeline.timeline-six .timeline-text-open .timeline-item-wrapper-text > *,
+.timeline.timeline-six .timeline-text-open .timeline-item-wrapper-text::after {
+    background-color: $secondary !important;
+    color: $light !important;
+}
+
+.timeline-number {
+    aspect-ratio: 1;
+    flex-shrink: 1;
+}
