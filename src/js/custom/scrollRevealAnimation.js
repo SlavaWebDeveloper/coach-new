@@ -1,5 +1,13 @@
+/**
+ * Applies scroll reveal animations to specified elements.
+ * @module ScrollRevealAnimation
+ */
+
 import ScrollReveal from 'scrollreveal';
 
+/**
+ * Initializes ScrollReveal with custom animation options and reveals specified elements.
+ */
 export const scrollRevealAnimation = () => {
     const sr = ScrollReveal({
         origin: 'top',
@@ -8,6 +16,7 @@ export const scrollRevealAnimation = () => {
         delay: 100
     });
 
+    // Reveal elements with specified animation options
     sr.reveal(`
             .reviews-title,
             .prices-title,
@@ -64,4 +73,5 @@ export const scrollRevealAnimation = () => {
         });
 }
 
+// Trigger the scroll reveal animation
 scrollRevealAnimation();

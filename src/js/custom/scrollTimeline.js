@@ -1,3 +1,11 @@
+/**
+ * Initiates a scroll timeline effect by adding or removing a CSS class based on scroll position.
+ * @module ScrollTimeline
+ */
+
+/**
+ * Scrolls through timeline elements and applies CSS class based on scroll position.
+ */
 export const scrollTimeline = () => {
     const timelineSixElements = document.querySelectorAll('.timeline-six');
 
@@ -16,4 +24,5 @@ export const scrollTimeline = () => {
     }
 }
 
+// Listen for scroll events to trigger the scroll timeline effect
 window.addEventListener('scroll', scrollTimeline);
