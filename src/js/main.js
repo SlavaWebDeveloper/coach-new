@@ -1,5 +1,5 @@
 // Импортируйте наш пользовательский CSS
-import '@/scss/styles.scss'
+import '../scss/styles.scss'
 import "bootstrap-icons/font/bootstrap-icons.scss";
 
 // Импортируйте только то, что нам нужно
@@ -17,11 +17,11 @@ import 'bootstrap/js/dist/tab';
 // import 'bootstrap/js/dist/toast';
 import Tooltip from 'bootstrap/js/dist/tooltip';
 
-import '@/js/custom/sliders.js';
-import '@/js/custom/arrow-up.js';
-import '@/js/custom/blurHeader.js';
-import '@/js/custom/scrollRevealAnimation.js';
-import '@/js/custom/scrollTimeline.js';
+import '../js/custom/sliders.js';
+import '../js/custom/arrow-up.js';
+import '../js/custom/blurHeader.js';
+import '../js/custom/scrollRevealAnimation.js';
+import '../js/custom/scrollTimeline.js';
 
 
 
