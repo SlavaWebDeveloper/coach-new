@@ -18,14 +18,14 @@
         rotate: 45deg;
         top: 50%;
         translate: 0 -50%;
-        width: 2.5rem;
+        width: 2rem;
     }
 }
 
 .timeline.timeline-six .timeline-text-open span,
 .timeline.timeline-six .timeline-text-open .timeline-item-wrapper-text,
-.timeline.timeline-six .timeline-text-open .timeline-item-wrapper-text > *,
 .timeline.timeline-six .timeline-text-open .timeline-item-wrapper-text::after {
+    transition: all 0.4s ease;
     background-color: $secondary !important;
     color: $light !important;
 }

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" width="800" height="800" version="1.1"
+  viewBox="0 0 64 64">
+  <style>
+    .st1 {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10
+    }
+  </style>
+  <path d="M17 44h6v8h-6zM29 32h6v20h-6zM41 20h6v32h-6zM12 36l24-24M30 12h6v6M12 52h40" class="st1" />
+</svg>

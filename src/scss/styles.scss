@@ -1,3 +1,5 @@
+@import url("/fonts/fonts.css");
+
 // Configuration
 @import "bootstrap/scss/functions";
 
@@ -54,34 +56,92 @@ $theme-colors: map-remove($theme-colors, "teal", "pink", "indigo", "purple", "bl
 // Utilities
 @import "bootstrap/scss/utilities/api";
 
+.min-vh-120 {
+    min-height: 120px;
+}
+
+@media (hover: hover) {
+    .button-hover:hover {
+        animation: pulse 1s;
+        box-shadow: 0 0 0 1em transparent;
+    }
+}
+
+@media (hover: none) {
+    .button-hover:active {
+        animation: pulse 1s;
+        box-shadow: 0 0 0 1em transparent;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba($primary, 0.4);
+    }
+}
+
 .header {
     min-height: 5rem;
 }
 
-.hero-wrapper {
-    &::after {
-        content: url("./img/hero-bg.svg");
-        position: absolute;
-        left: 0;
-        bottom: -30px;
-        right: 0;
-        z-index: -1;
-        max-height: 400px;
-        width: 100%;
-        overflow: hidden;
+.hero-wrapper .air {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: url("./img/hero-bg.svg");
+    background-size: 1000px 180px;
+}
+
+.hero-wrapper .air.air1 {
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.hero-wrapper .air.air2 {
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.hero-wrapper .air.air3 {
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+.hero-wrapper .air.air4 {
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes wave {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes wave2 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: -1000px;
     }
 }
 
 @media (max-width: 775.98px) {
     .hero {
         justify-content: end !important;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .hero-wrapper::after {
-        content: url("./img/hero-bg-small.svg");
-        max-height: 300px;
     }
 }
 
@@ -204,4 +264,71 @@ $theme-colors: map-remove($theme-colors, "teal", "pink", "indigo", "purple", "bl
     bottom: 20px;
     right: 20px;
     display: none;
+}
+
+.about-line:after {
+    background-color: currentColor;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    -webkit-transition-duration: inherit;
+    -o-transition-duration: inherit;
+    transition-duration: inherit;
+    translate: -50%;
+    width: 0%;
+    animation: aboutLine 1s 3s alternate forwards;
+}
+
+@keyframes aboutLine {
+    100% {
+        width: 50%;
+    }
+}
+
+#about {
+    background: url("./img/section-bg-7.svg") left bottom / auto no-repeat;
+}
+
+.section-prices {
+    background-image: url("./img/Vector.svg"), url("./img/square.svg");
+    background-position:
+        right calc(50% - 50vw) bottom,
+        left center;
+    background-size: auto, auto;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.consultation-body-number {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 120px;
+    color: $secondary;
+}
+
+.section-reserve {
+    background-image: url("./img/squareBig.svg");
+    background-position: right calc(55% - 50vw) top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    animation: moveBackground 5s infinite linear; /* Применяем анимацию с временем и бесконечным повторением */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: right calc(55% - 50vw) top; /* Начальная позиция */
+    }
+    25% {
+        background-position: right calc(53% - 50vw) top -50px; /* Промежуточная позиция */
+    }
+    50% {
+        background-position: right calc(51% - 50vw) top ; /* Промежуточная позиция */
+    }
+    75% {
+        background-position: right calc(53% - 50vw) top 50px; /* Промежуточная позиция */
+    }
+    100% {
+        background-position: right calc(55% - 50vw) top; /* Конечная позиция */
+    }
 }

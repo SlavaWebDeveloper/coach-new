@@ -13,7 +13,13 @@ export const scrollRevealAnimation = () => {
         origin: 'top',
         distance: '80px',
         duration: 2500,
-        delay: 100
+        delay: 100,
+        afterReveal: (el) => {
+            el.style.transition = '';
+            el.style.opacity = '';
+            el.style.transform = '';
+            el.classList.remove('sr');
+        }
     });
 
     // Reveal elements with specified animation options
@@ -26,13 +32,16 @@ export const scrollRevealAnimation = () => {
     sr.reveal(`
             .reviews-body,
             .prices-body,
+            .prices-body-2,
             .publications-body
         `,
         { origin: 'bottom' });
 
     sr.reveal(`
         .hero-image-content,
-        .about-image-content
+        .about-image-content,
+        .image__wrapper
+
         `,
         { origin: 'rigth', delay: 100 });
 
@@ -59,7 +68,6 @@ export const scrollRevealAnimation = () => {
 
     sr.reveal(`
         .hero-text-content-social-link,
-        .consultation-col,
         .footer-col
         `,
         { origin: 'bottom', delay: 300, interval: 100 });
@@ -71,6 +79,27 @@ export const scrollRevealAnimation = () => {
         {
             origin: 'top', delay: 300, interval: 100, distance: '0px',
         });
+
+    sr.reveal(`.img-layer_image2`, {
+        origin: 'left', delay: 1200, distance: '0px',
+    });
+
+    sr.reveal(`.img-layer_image3`, {
+        origin: 'rigth', delay: 1800, distance: '0px',
+    });
+
+    sr.reveal(`.img-layer_image4`, {
+        origin: 'top', delay: 2400, distance: '0px',
+    });
+
+    sr.reveal(`.img-layer_image5`, {
+        origin: 'left', delay: 2800, distance: '0px',
+    });
+
+    sr.reveal(`.img-layer_image6`, {
+        origin: 'rigth', delay: 3200, distance: '0px',
+    });
+    
 }
 
 // Trigger the scroll reveal animation

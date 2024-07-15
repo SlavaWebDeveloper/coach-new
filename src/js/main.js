@@ -15,10 +15,19 @@ import 'bootstrap/js/dist/modal';
 import 'bootstrap/js/dist/scrollspy';
 import 'bootstrap/js/dist/tab';
 // import 'bootstrap/js/dist/toast';
-// import 'bootstrap/js/dist/tooltip';
+import Tooltip from 'bootstrap/js/dist/tooltip';
 
 import '@/js/custom/sliders.js';
 import '@/js/custom/arrow-up.js';
 import '@/js/custom/blurHeader.js';
 import '@/js/custom/scrollRevealAnimation.js';
 import '@/js/custom/scrollTimeline.js';
+
+
+
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new Tooltip(tooltipTriggerEl);
+});
+
