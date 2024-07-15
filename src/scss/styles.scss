@@ -90,7 +90,7 @@ $theme-colors: map-remove($theme-colors, "teal", "pink", "indigo", "purple", "bl
     left: 0;
     width: 100%;
     height: 150px;
-    background: url("./img/hero-bg.svg");
+    background: url("/img/hero-bg.svg");
     background-size: 1000px 180px;
 }
 
@@ -288,11 +288,11 @@ $theme-colors: map-remove($theme-colors, "teal", "pink", "indigo", "purple", "bl
 }
 
 #about {
-    background: url("./img/section-bg-7.svg") left bottom / auto no-repeat;
+    background: url("/img/section-bg-7.svg") left bottom / auto no-repeat;
 }
 
 .section-prices {
-    background-image: url("./img/Vector.svg"), url("./img/square.svg");
+    background-image: url("/img/Vector.svg"), url("/img/square.svg");
     background-position:
         right calc(50% - 50vw) bottom,
         left center;
@@ -308,7 +308,7 @@ $theme-colors: map-remove($theme-colors, "teal", "pink", "indigo", "purple", "bl
 }
 
 .section-reserve {
-    background-image: url("./img/squareBig.svg");
+    background-image: url("/img/squareBig.svg");
     background-position: right calc(55% - 50vw) top;
     background-size: auto;
     background-repeat: no-repeat;
