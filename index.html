@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Bootstrap w/ Vite</title>
-    <script type="module" src="./js/main.js"></script>
+		<script type="module" src="/src/js/main.js"></script>
 	</head>
 	<body class="position-relative z-n1">
 		<header class="header py-3 fixed-top" id="header">
 			<div class="container-xxl">
-				<nav class="navbar navbar-expand-lg" id="navbar-example2">
+				<nav class="navbar navbar-expand-lg" id="navbar">
 					<div
 						class="container-fluid d-flex flex-wrap justify-content-between align-items-center"
 					>
@@ -28,48 +28,60 @@
 							</svg>
 							<span class="visually-hidden">logotip</span>
 						</a>
-
 						<button
 							class="navbar-toggler"
 							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#navbarNav"
-							aria-controls="navbarNav"
-							aria-expanded="false"
-							aria-label="Переключатель навигации"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasNavbar"
+							aria-controls="offcanvasNavbar"
+							aria-label="Toggle navigation"
 						>
 							<span class="navbar-toggler-icon"></span>
 						</button>
-
-						<div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
-							<ul class="nav navbar-nav navbar-nav-scroll mt-4 mt-lg-0">
-								<li class="nav-item mx-2">
-									<a
-										href="#home"
-										class="nav-link rounded-2 ps-2"
-										aria-current="page"
-										>Главная</a
-									>
-								</li>
-
-								<li class="nav-item mx-2">
-									<a href="#cost" class="nav-link rounded-2 ps-2">Стоимость</a>
-								</li>
-
-								<li class="nav-item mx-2">
-									<a href="#reviews" class="nav-link rounded-2 ps-2">Отзывы</a>
-								</li>
-
-								<li class="nav-item mx-2">
-									<a href="#consultations" class="nav-link rounded-2 ps-2"
-										>Этапы консультаций</a
-									>
-								</li>
-
-								<li class="nav-item mx-2">
-									<a href="#about" class="nav-link rounded-2 ps-2">Обо мне</a>
-								</li>
-							</ul>
+						<div
+							class="offcanvas offcanvas-end"
+							tabindex="-1"
+							id="offcanvasNavbar"
+							aria-labelledby="offcanvasNavbarLabel"
+						>
+							<div class="offcanvas-header">
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="offcanvas"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+									<li class="nav-item mx-2">
+										<a
+											href="#home"
+											class="nav-link rounded-2 ps-2"
+											aria-current="page"
+											>Главная</a
+										>
+									</li>
+									<li class="nav-item mx-2">
+										<a href="#cost" class="nav-link rounded-2 ps-2"
+											>Стоимость</a
+										>
+									</li>
+									<li class="nav-item mx-2">
+										<a href="#reviews" class="nav-link rounded-2 ps-2"
+											>Отзывы</a
+										>
+									</li>
+									<li class="nav-item mx-2">
+										<a href="#consultations" class="nav-link rounded-2 ps-2"
+											>Этапы консультаций</a
+										>
+									</li>
+									<li class="nav-item mx-2">
+										<a href="#about" class="nav-link rounded-2 ps-2">Обо мне</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</nav>
@@ -78,7 +90,7 @@
 
 		<div
 			data-bs-spy="scroll"
-			data-bs-target="#navbar-example2"
+			data-bs-target="#navbar"
 			data-bs-root-margin="0px 0px -40%"
 			data-bs-smooth-scroll="true"
 			class="scrollspy-example"
@@ -106,13 +118,9 @@
 							/>
 						</div>
 						<div class="col-lg-6 col-xxl-7 position-relative hero-text-content">
-							<span
-								class="position-absolute top-0 end-0 border-top border-2 border-black w-25"
-								style="max-width: 90px"
-							>
-							</span>
+							<span class="animated-line"></span>
 
-							<div class="h5 mb-4 balanced-text hero-text-content-title">
+							<div class="h5 mb-4 mt-4 balanced-text hero-text-content-title">
 								<a
 									class="text-cc-text"
 									href="https://www.google.com/"
@@ -153,7 +161,7 @@
 							<button
 								class="btn btn-primary btn-lg px-4 z-0 position-relative my-3 hero-text-content-button"
 								data-bs-toggle="modal"
-								data-bs-target="#mainModal"
+								data-bs-target="#subscribeModal"
 							>
 								Забронировать сессию
 							</button>
@@ -222,7 +230,7 @@
 											<div class="col">&nbsp;</div>
 										</div>
 										<span
-											class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-semibold lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
+											class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-circle fs-5 fw-semibold lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
 										>
 											1
 										</span>
@@ -255,7 +263,7 @@
 											<div class="col">&nbsp;</div>
 										</div>
 										<span
-											class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-semibold lh-1 text-cc-text border border-secondary timeline-text-open"
+											class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-circle fs-5 fw-semibold lh-1 text-cc-text border border-secondary timeline-text-open"
 										>
 											2
 										</span>
@@ -287,7 +295,7 @@
 											<div class="col">&nbsp;</div>
 										</div>
 										<span
-											class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-5 fs-5 fw-semibold lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
+											class="d-none d-sm-flex align-items-center justify-content-center timeline-number rounded-circle fs-5 fw-semibold lh-1 text-cc-text bg-light border border-secondary timeline-text-open"
 										>
 											3
 										</span>
@@ -321,7 +329,7 @@
 					<div
 						class="d-flex flex-column align-items-start justify-content-between col-lg-6 col-xxl-6 position-relative m-0"
 					>
-						<span class="align-self-center about-line"></span>
+						<span class="about-line"></span>
 						<h2
 							class="h2 w-100 mb-4 balanced-text fw-bold w-100 pt-4 about-text-content-title text-center"
 						>
@@ -334,7 +342,7 @@
 							target="_blank"
 							class="btn btn-primary btn-lg px-4 z-0 position-relative about-text-content-button align-self-center button-hover"
 							data-bs-toggle="modal"
-							data-bs-target="#mainModal"
+							data-bs-target="#subscribeModal"
 						>
 							Гайд
 						</a>
@@ -343,16 +351,16 @@
 						class="col-md-12 col-lg-6 col-xxl-4 d-none d-md-block m-0"
 						style="min-height: 450px"
 					>
-						<div class="image__wrapper position-relative w-100">
+						<div class="image__wrapper position-relative w-100 h-100">
 							<div
-								class="img-layer_image-wrapper slide_up position-absolute d-block w-100 h-100"
+								class="img-layer_image-wrapper slide_up position-absolute z-3 d-block w-100 h-100"
 							>
-								<div class="img-layer_item">
-									<div class="img-layer_image img-layer_image1">
+								<div class="img-layer_item h-100">
+									<div class="img-layer_image img-layer_image1 h-100">
 										<img
 											id="animated-image"
 											src="./img/girl.svg"
-											class="img-fluid"
+											class="img-fluid h-100 w-100"
 											loading="lazy"
 										/>
 									</div>
@@ -362,14 +370,14 @@
 								class="img-layer_image-wrapper zoom_in position-absolute d-block w-100 h-100"
 								style="z-index: 1"
 							>
-								<div class="img-layer_item">
-									<div class="img-layer_image img-layer_image2">
+								<div class="img-layer_item h-100">
+									<div class="img-layer_image img-layer_image2 h-100">
 										<img
 											src="./img/bg-2.png"
 											alt=""
 											width=""
 											height=""
-											class="h-auto w-100"
+											class="h-100 w-100"
 											decoding="async"
 										/>
 									</div>
@@ -379,13 +387,13 @@
 								class="img-layer_image-wrapper zoom_in position-absolute d-block w-100 h-100"
 								style="z-index: 1"
 							>
-								<div class="img-layer_item">
-									<div class="img-layer_image img-layer_image3">
+								<div class="img-layer_item h-100">
+									<div class="img-layer_image img-layer_image3 h-100">
 										<img
 											decoding="async"
 											src="./img/bg-3.png"
 											alt="image-layers-3-03"
-											class="h-auto w-100"
+											class="w-100 h-100"
 										/>
 									</div>
 								</div>
@@ -394,13 +402,13 @@
 								class="img-layer_image-wrapper zoom_in position-absolute d-block w-100 h-100"
 								style="z-index: 1"
 							>
-								<div class="img-layer_item">
-									<div class="img-layer_image img-layer_image4">
+								<div class="img-layer_item h-100">
+									<div class="img-layer_image img-layer_image4 h-100">
 										<img
 											decoding="async"
 											src="./img/bg-4.png"
 											alt="image-layers-3-04"
-											class="h-auto w-100"
+											class="w-100 h-100"
 										/>
 									</div>
 								</div>
@@ -409,10 +417,10 @@
 								class="img-layer_image-wrapper zoom_in position-absolute d-block w-100 h-100"
 								style="z-index: 1"
 							>
-								<div class="img-layer_item">
-									<div class="img-layer_image img-layer_image5">
+								<div class="img-layer_item h-100">
+									<div class="img-layer_image img-layer_image5 h-100">
 										<img
-											class="h-auto w-100"
+											class="w-100 h-100"
 											decoding="async"
 											src="./img/bg-5.png"
 											alt="image-layers-3-05"
@@ -424,13 +432,13 @@
 								class="img-layer_image-wrapper zoom_in position-absolute d-block w-100 h-100"
 								style="z-index: 1"
 							>
-								<div class="img-layer_item">
-									<div class="img-layer_image img-layer_image6">
+								<div class="img-layer_item h-100">
+									<div class="img-layer_image img-layer_image6 h-100">
 										<img
 											decoding="async"
 											src="./img/bg-6.png"
 											alt="image-layers-3-06"
-											class="h-auto w-100"
+											class="w-100 h-100"
 										/>
 									</div>
 								</div>
@@ -446,25 +454,35 @@
 						Цена <span class="text-secondary">коучинга</span>
 					</h2>
 
-					<ul class="nav nav-pills prices-body" role="tablist">
-						<li class="nav-item">
-							<a
-								class="nav-link active text-cc-text-gray opacity-50"
+					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link text-cc-text-gray opacity-50 active"
+								id="#price-1-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#price-1"
+								type="button"
 								role="tab"
-								href="#price-1"
-								data-bs-toggle="tab"
-								>Активная</a
+								aria-controls="#price-1"
+								aria-selected="true"
 							>
+								Home
+							</button>
 						</li>
 
-						<li class="nav-item">
-							<a
+						<li class="nav-item" role="presentation">
+							<button
 								class="nav-link text-cc-text-gray opacity-50"
+								id="#price-2-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#price-2"
+								type="button"
 								role="tab"
-								href="#price-2"
-								data-bs-toggle="tab"
-								>Активная-2</a
+								aria-controls="#price-2"
+								aria-selected="true"
 							>
+								Home 2
+							</button>
 						</li>
 					</ul>
 
@@ -560,8 +578,8 @@
 											>
 												<img
 													src="./img/consultation/icons-1.svg"
-													class="object-fit-cover"
-													style="max-width: 100px; height: auto"
+													class="object-fit-cover h-auto"
+													style="max-width: 100px"
 													alt="..."
 												/>
 												<h3 class="m-0 mx-3">Заголовок</h3>
@@ -583,8 +601,8 @@
 											>
 												<img
 													src="./img/consultation/icons-2.svg"
-													class="object-fit-cover"
-													style="max-width: 100px; height: auto"
+													class="object-fit-cover h-auto"
+													style="max-width: 100px"
 													alt="..."
 												/>
 												<h3 class="m-0 mx-3">Заголовок</h3>
@@ -605,8 +623,8 @@
 											>
 												<img
 													src="./img/consultation/icons-3.svg"
-													class="object-fit-cover"
-													style="max-width: 100px; height: auto"
+													class="object-fit-cover h-auto"
+													style="max-width: 100px"
 													alt="..."
 												/>
 												<h3 class="m-0 mx-3">Заголовок</h3>
@@ -629,8 +647,8 @@
 											>
 												<img
 													src="./img/consultation/icons-4.svg"
-													class="object-fit-cover"
-													style="max-width: 100px; height: auto"
+													class="object-fit-cover h-auto"
+													style="max-width: 100px"
 													alt="..."
 												/>
 												<h3 class="m-0 mx-3">Заголовок</h3>
@@ -653,8 +671,8 @@
 											>
 												<img
 													src="./img/consultation/icons-5.svg"
-													class="object-fit-cover"
-													style="max-width: 100px; height: auto"
+													class="object-fit-cover h-auto"
+													style="max-width: 100px"
 													alt="..."
 												/>
 												<h3 class="m-0 mx-3">Заголовок</h3>
@@ -723,8 +741,8 @@
 											>
 												<img
 													src="./img/consultation/icons-1.svg"
-													class="object-fit-cover"
-													style="max-width: 100px; height: auto"
+													class="object-fit-cover h-auto"
+													style="max-width: 100px"
 													alt="..."
 												/>
 												<h3 class="m-0 mx-3">Заголовок</h3>
@@ -746,8 +764,8 @@
 											>
 												<img
 													src="./img/consultation/icons-2.svg"
-													class="object-fit-cover"
-													style="max-width: 100px; height: auto"
+													class="object-fit-cover h-auto"
+													style="max-width: 100px"
 													alt="..."
 												/>
 												<h3 class="m-0 mx-3">Заголовок</h3>
@@ -768,8 +786,8 @@
 											>
 												<img
 													src="./img/consultation/icons-3.svg"
-													class="object-fit-cover"
-													style="max-width: 100px; height: auto"
+													class="object-fit-cover h-auto"
+													style="max-width: 100px"
 													alt="..."
 												/>
 												<h3 class="m-0 mx-3">Заголовок</h3>
@@ -792,8 +810,8 @@
 											>
 												<img
 													src="./img/consultation/icons-4.svg"
-													class="object-fit-cover"
-													style="max-width: 100px; height: auto"
+													class="object-fit-cover h-auto"
+													style="max-width: 100px"
 													alt="..."
 												/>
 												<h3 class="m-0 mx-3">Заголовок</h3>
@@ -816,8 +834,8 @@
 											>
 												<img
 													src="./img/consultation/icons-5.svg"
-													class="object-fit-cover"
-													style="max-width: 100px; height: auto"
+													class="object-fit-cover h-auto"
+													style="max-width: 100px"
 													alt="..."
 												/>
 												<h3 class="m-0 mx-3">Заголовок</h3>
@@ -1058,7 +1076,7 @@
 				</div>
 			</section>
 
-			<section class="section-reserve mb-5 py-5 bg-cc-bg-card" id="reviews">
+			<section class="section-reserve mb-5 py-5 bg-cc-bg-card" id="reserve">
 				<div class="container-xxl py-5">
 					<h2 class="pb-2 h1 text-center fw-bold mb-5 reviews-title">
 						Забронировать <span class="text-secondary">консультацию</span>
@@ -1148,7 +1166,7 @@
 				</div>
 			</section>
 
-			<section class="section-publications py-5 bg-cc-bg">
+			<section class="section-publications py-5 bg-cc-bg" id="publications">
 				<div class="container-xxl py-5">
 					<h2 class="pb-2 h1 text-center fw-bold mb-5 publications-title">
 						Список <span class="text-secondary">публикаций</span>
@@ -1167,7 +1185,7 @@
 									<div class="card bg-cc-bg-reviews shadow rounded-5">
 										<img
 											src="./img/links.jpg"
-											class="card-img-top rounded-5"
+											class="card-img-top rounded-top-5"
 											alt="..."
 										/>
 										<div class="card-body">
@@ -1211,7 +1229,7 @@
 									<div class="card bg-cc-bg-reviews shadow rounded-5">
 										<img
 											src="./img/links.jpg"
-											class="card-img-top rounded-5"
+											class="card-img-top rounded-top-5"
 											alt="..."
 										/>
 										<div class="card-body">
@@ -1255,7 +1273,7 @@
 									<div class="card bg-cc-bg-reviews shadow rounded-5">
 										<img
 											src="./img/links.jpg"
-											class="card-img-top rounded-5"
+											class="card-img-top rounded-top-5"
 											alt="..."
 										/>
 										<div class="card-body">
@@ -1361,7 +1379,6 @@
 								/>
 							</svg>
 							<span class="visually-hidden">logotip</span>
-							<!--TODO -->
 						</a>
 
 						<p class="text-cc-text fs-6 fw-normal lh-sm balanced-text me-2 w-75">
@@ -1463,120 +1480,66 @@
 					</div>
 				</div>
 			</div>
-			<p class="text-center text-body-secondary m-0 pb-3 fw-semibold">
+			<p class="text-center text-body-secondary m-0 pb-3 fw-semibold footer-copyright">
 				©2024. All rights reserved.
 			</p>
 		</footer>
 
 		<!-- fade -->
 		<div
-			class="modal"
-			id="mainModal"
+			class="modal fade"
+			id="subscribeModal"
 			tabindex="-1"
-			aria-labelledby="mainModalLabel"
+			aria-labelledby="subscribeModalLabel"
 			aria-hidden="true"
 		>
-			<div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
-				<div class="modal-content card-gradient">
-					<div class="modal-header border-0">
-						<h5 class="h5">Заполните, пожалуйста, форму</h5>
+			<div class="modal-dialog modal-lg modal-dialog-centered ">
+				<div class="modal-content card-gradient border-0">
+					<div class="modal-header border-0 z-1">
 						<button
 							class="btn-close"
 							data-bs-dismiss="modal"
-							aria-label="close"
+							aria-label="Close"
 						></button>
 					</div>
 
-					<div
-						class="modal-body d-flex flex-column align-items-center justify-content-center"
-					>
-						<form class="row g-3 needs-validation" novalidate>
-							<div class="col-6 position-relative">
-								<label for="validationTooltip01" class="form-label">Имя</label>
-								<input
-									type="text"
-									class="form-control shadow border-0"
-									id="validationTooltip01"
-									placeholder="Как к вам обращаться?"
-									required
-								/>
-								<div class="valid-tooltip">Все хорошо!</div>
-							</div>
+					<img
+						src="./img/thank.svg"
+						alt="Subscribe Image"
+						class="position-absolute col-lg-5 col-4 d-none d-lg-block bottom-0 start-0 mw-100 h-100"
+					/>
 
-							<div class="col-md-6">
-								<label for="validationTooltip01" class="form-label">Email</label>
+					<div class="modal-body d-flex align-items-end justify-content-end">
+						<form class="row g-3 needs-validation col-lg-7 col-sm-12 col-12" novalidate id="subscribeForm">
+							<h5 class="modal-title ms-auto h3" id="subscribeModalLabel">
+								<span class="text-secondary">Подпишитесь</span> на нашу рассылку
+							</h5>
+							<div class="col-md-12">
+								<label for="emailInput" class="form-label">Email</label>
 								<input
+									id="emailInput"
 									class="form-control shadow border-0"
 									type="email"
 									name="email"
-									placeholder="E-mail Address"
-									required=""
+									placeholder="Введите ваш E-mail"
+									required
 								/>
-								<div class="valid-feedback">Email field is valid!</div>
-								<div class="invalid-feedback">Email field cannot be blank!</div>
-							</div>
-
-							<div class="col-md-12">
-								<p class="">Выберите сферу проблем</p>
-								<div class="form-check form-check-inline">
-									<input
-										class="form-check-input shadow border-0"
-										type="checkbox"
-										value=""
-										id="flexCheckChecked"
-										required=""
-									/>
-									<label class="form-check-label" for="flexCheckChecked"
-										>Проблема 1</label
-									>
-									<div class="invalid-feedback">
-										Please confirm that the entered data are all correct!
-									</div>
-								</div>
-
-								<div class="form-check form-check-inline">
-									<input
-										class="form-check-input shadow border-0"
-										type="checkbox"
-										value=""
-										id="flexCheckChecked2"
-										required=""
-									/>
-									<label class="form-check-label" for="flexCheckChecked2"
-										>Проблема 2</label
-									>
-									<div class="invalid-feedback">
-										Please confirm that the entered data are all correct!
-									</div>
-								</div>
-
-								<div class="form-check form-check-inline">
-									<input
-										class="form-check-input shadow border-0"
-										type="checkbox"
-										value=""
-										id="flexCheckChecked3"
-										required=""
-									/>
-									<label class="form-check-label" for="flexCheckChecked3"
-										>Проблема 3</label
-									>
-									<div class="invalid-feedback">
-										Please confirm that the entered data are all correct!
-									</div>
+								<div class="invalid-feedback">
+									Пожалуйста, введите корректный адрес электронной почты.
 								</div>
 							</div>
 
 							<div class="col-12 d-flex flex-column align-items-start">
 								<button class="btn btn-primary px-4 mt-4" type="submit">
-									Отправить форму
+									Подписаться
 								</button>
-								<span class="fw-light mt-2" style="font-size: 0.8rem"
-									>* Нажимая на кнопку отправить вы согласны с нашей политикой
-									защиты информации</span
-								>
+								<span class="fw-light mt-2" style="font-size: 0.8rem">
+									* Нажимая на кнопку подписаться, вы соглашаетесь с нашей
+									политикой конфиденциальности.
+								</span>
 							</div>
 						</form>
+						<div id="formResponse" class="mt-3"></div>
 					</div>
 				</div>
 			</div>

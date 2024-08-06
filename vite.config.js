@@ -1,15 +1,38 @@
 import { defineConfig } from "vite";
-import path from "path";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 export default defineConfig({
-  root: path.resolve(__dirname, 'src'),
-
   resolve: {
     alias: {
-      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+      "@": "/src",
+    },
+  },
+  plugins: [
+    ViteImageOptimizer({
+      jpg: {
+        quality: 80,
+      },
+      png: {
+        quality: 80,
+      },
+      webp: {
+        quality: 80,
+      },
+      avif: {
+        quality: 60,
+      },
+      jpeg: {
+        quality: 80,
+      },
+      svg: {
+      }
+    })
+  ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: '/index.html',
+      }
     }
-  },
-  server: {
-    port: 8080,
-  },
-});
+  }
+})

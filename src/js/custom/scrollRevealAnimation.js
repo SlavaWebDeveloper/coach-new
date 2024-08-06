@@ -29,21 +29,23 @@ export const scrollRevealAnimation = () => {
             .consultation-title,
             .publications-title
         `);
+
     sr.reveal(`
             .reviews-body,
             .prices-body,
             .prices-body-2,
             .publications-body
         `,
-        { origin: 'bottom' });
+        { origin: 'bottom' }
+    );
 
     sr.reveal(`
         .hero-image-content,
         .about-image-content,
         .image__wrapper
-
         `,
-        { origin: 'rigth', delay: 100 });
+        { origin: 'rigth', delay: 100 }
+    );
 
     sr.reveal(`
         .hero-text-content-title,
@@ -56,7 +58,8 @@ export const scrollRevealAnimation = () => {
         .about-text-content-description,
         .about-text-content-button
         `,
-        { origin: 'left', distance: '180px', delay: 300, interval: 100 });
+        { origin: 'left', distance: '180px', delay: 300, interval: 100 }
+    );
 
     sr.reveal(`
         .hero-text-content,
@@ -64,13 +67,15 @@ export const scrollRevealAnimation = () => {
         .timeline-subtitle,
         .timeline-description
         `,
-        { origin: 'top', delay: 300, interval: 100 });
+        { origin: 'top', delay: 300, interval: 100 }
+    );
 
     sr.reveal(`
         .hero-text-content-social-link,
         .footer-col
         `,
-        { origin: 'bottom', delay: 300, interval: 100 });
+        { origin: 'bottom', delay: 300, interval: 100 }
+    );
 
 
     sr.reveal(`
@@ -78,11 +83,16 @@ export const scrollRevealAnimation = () => {
         `,
         {
             origin: 'top', delay: 300, interval: 100, distance: '0px',
-        });
+        }
+    );
 
-    sr.reveal(`.img-layer_image2`, {
+    sr.reveal(`
+        .img-layer_image2,
+        .footer-copyright
+        `, {
         origin: 'left', delay: 1200, distance: '0px',
-    });
+    }
+    );
 
     sr.reveal(`.img-layer_image3`, {
         origin: 'rigth', delay: 1800, distance: '0px',
@@ -99,7 +109,7 @@ export const scrollRevealAnimation = () => {
     sr.reveal(`.img-layer_image6`, {
         origin: 'rigth', delay: 3200, distance: '0px',
     });
-    
+
 }
 
 // Trigger the scroll reveal animation
