@@ -14,7 +14,7 @@ import 'bootstrap/js/dist/offcanvas';
 // import 'bootstrap/js/dist/popover';
 import 'bootstrap/js/dist/scrollspy';
 import 'bootstrap/js/dist/tab';
-// import 'bootstrap/js/dist/toast';
+import 'bootstrap/js/dist/toast';
 import Tooltip from 'bootstrap/js/dist/tooltip';
 
 import '../js/custom/sliders.js';
@@ -51,10 +51,30 @@ document.addEventListener("DOMContentLoaded", function () {
       const scrollPosition = window.scrollY + window.innerHeight;
 
       if (scrollPosition > sectionTop && !isModalShown) {
-        setTimeout(() => {
-          modal.show();
-          isModalShown = true; 
-        }, 2600)
+        modal.show();
+        isModalShown = true;
+      }
+    });
+  }
+
+  const imageLineBgs = document.querySelectorAll('.image__line-bg');
+  const imageLineBgsAnimationArg = [
+    { delay: '3s', duration: '4s', timingFunction: 'linear', animationNames: 'moveUpDown-5' },
+    { delay: '3s', duration: '3s', timingFunction: 'linear', animationNames: 'moveUpDown-10' },
+    { delay: '3s', duration: '2s', timingFunction: 'linear', animationNames: 'moveLeftRight-5' },
+    { delay: '3s', duration: '4s', timingFunction: 'linear', animationNames: 'moveLeftRight-5' },
+    { delay: '3s', duration: '3s', timingFunction: 'linear', animationNames: 'moveLeftRight-10' }
+  ]
+
+  if (imageLineBgs) {
+    imageLineBgs.forEach((imageLineBg, index) => {
+      if (imageLineBgsAnimationArg[index]) {
+        const { delay, duration, timingFunction, animationNames } = imageLineBgsAnimationArg[index];
+        imageLineBg.style.animationDelay = delay;
+        imageLineBg.style.animationDuration = duration;
+        imageLineBg.style.animationTimingFunction = timingFunction;
+        imageLineBg.style.animationName = animationNames;
+        imageLineBg.style.animationIterationCount = 'infinite';
       }
     });
   }
